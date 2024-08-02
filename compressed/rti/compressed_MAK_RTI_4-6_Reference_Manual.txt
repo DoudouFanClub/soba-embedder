@@ -1,0 +1,3227 @@
+MAK Technologies offers a suite of products focused on simulation, visualization, and run-time infrastructure:
+
+1. **VR-Link Network Toolkit:**
+   - Object-oriented C++ library implementing High Level Architecture (HLA) and Distributed Interactive Simulation (DIS) protocol.
+   - Supports Rapid Prototyping (RPR) Federation Object Model (FOM) with mapping to other FOMs.
+   - Includes sample debugging applications for generating predictable HLA/DIS messages and displaying network message contents.
+
+2. **MAK RTI:**
+   - High-performance run-time infrastructure for HLA-compliant applications.
+   - Features API (RTIspy) for extending the RTI using plug-in modules and a graphical user interface (RTI Assistant) for managing federates, federations, and configuration tasks.
+
+3. **VR-Forces:**
+   - Computer-generated forces application with 2D/3D views, entity management, task assignment, and simulation at individual (entity-level) or aggregate levels.
+   - Functions as a plan view display for remote simulation objects participating in exercises.
+   - Allows extension of the VR-Forces application or creation of custom applications using another user interface.
+
+4. **VR-Vantage:**
+   - Line of products for simulation visualization:
+     - VR-Vantage Stealth: Provides realistic 3D, 2D plan view, and exaggerated reality (XR) views with movable viewpoint attachment to simulation objects.
+     - VR-Vantage IG: Configurable desktop image generator optimized for out-the-window (OTW) scenes and remote camera views.
+     - VR-Vantage PVD: Offers a 2D plan view display for the big picture of the simulated world.
+   - SensorFX: Enhanced version using physics-based sensors to view materially classified terrain and simulation object models (in partnership with JRM Technologies).
+   - Toolkit: 3D visual application development toolkit for customizing, extending, or integrating VR-Vantage capabilities into custom applications. Built on top of OpenSceneGraph (OSG).
+
+5. **MAK Data Logger:**
+   - Records HLA and DIS exercises for after-action review and playback.
+
+- **Logger:**
+  - Variable speed playback (above/below normal) and quick navigation.
+  - GUI and text-based interfaces.
+  - Extensible via API with plug-in modules or embedding in other apps.
+  - Editing features: merge, trim, offset recordings.
+
+- **Interoperability Tools:**
+  - VR-Exchange: Enables incompatible protocol simulations to interoperate (e.g., HLA RPR FOM versions, different RTIs).
+  - Supports HLA, TENA, DIS translation.
+
+- **Terrain Server:**
+  - VR-TheWorld Server: Web-based streaming terrain server with global base map and custom data support.
+  - Deployable on private networks for secure access to various apps.
+
+- **Human Character SDK:**
+  - DI-Guy: Embeddable library for adding lifelike human characters in real-time applications, with thousands of ready-to-use assets.
+  - Integrated into MAK's visual applications (VR-Engage, VR-Forces, VR-Vantage).
+
+- **Radar Simulation:**
+  - RadarFX: Client-server SAR simulation using VR-Vantage and SensorFX for terrain database loading and image requests.
+
+- **Virtual Simulator:**
+  - VR-Engage: Multi-role virtual simulator with various playable roles (human character, vehicle crew, sensor operator, aircraft/helicopter pilot).
+  - Incorporates VR-Force engine and VR-Vantage graphics rendering.
+
+- **Web-based Simulation:**
+  - WebLVC Server: Enables web-based simulation federates to participate in distributed simulations as part of the WebLVC Suite.
+
+**Contact Information for MAK Technologies:**
+
+- Phone & Fax:
+  - Voice: (617) 876-8085, ext. 3 for support
+  - Fax: (617) 876-9208
+
+- Email:
+  - Sales & Upgrades: info@mak.com
+  - Technical Support: support@mak.com
+
+- Website:
+  - MAK Technologies Homepage: www.mak.com
+  - License Key Requests: www.mak.com/support/get-licenses
+  - Product Version Information: www.mak.com/support/product-versions
+  - Free, Unlicensed MAK RTI: www.mak.com/support/bonus-material
+
+- Postal Address:
+  - MAK Technologies, 150 Cambridge Park Drive, 3rd Floor, Cambridge, MA, USA 02140
+
+- **Text Formatting:**
+  - *Blue text*: Hyperlink to another manual location.
+  - `{}`: Required arguments.
+  - `[]`: Optional arguments.
+  - `|` or `(|)`: Separates mutually exclusive options in a command.
+  - `/`: Indicates a directory. Use `/` for generic discussions, substitute `\` on PC when typing pathnames.
+  - *Italic*: File name, pathname, or class name.
+  - *Sans-serif*: Parameter or argument.
+  - **Bold**: One-step procedure.
+  - *Underline*: Menu option.
+  - `i`: Supplemental or clarifying information.
+  - `!`: Additional information for task success.
+
+- **Mouse Button Naming Conventions:**
+  - Primary mouse button: Usually left for right-handed mice, right for left-handed.
+  - Secondary mouse button (context-sensitive menu): Usually right for right-handed, left for left-handed.
+
+- **Third Party Licenses:**
+  - MAK software uses code from third parties under various licenses:
+    - GNU Lesser General Public License (LGPL):
+      - CIGI
+      - DevIL
+      - GEOS
+      - GStreamer
+      - LibIconV
+      - LibWebSockets
+      - OPCODE
+      - OpenAL
+      - OSG
+      - OsgEarth
+      - Pthread
+      - Qt
+      - Qwt
+
+    - ZLib license:
+      - Bullet Physics
+      - LibPNG
+      - LibSDL
+      - Minizip
+      - Zlib
+
+    - MIT license:
+      - Expat
+      - FreeGLUT
+      - GDAL
+      - GeoTiff
+      - HarfBuzz
+      - LibCURL
+      - LibSquish
+      - LibXML
+      - LUA
+      - LuaBind
+      - Proj
+      - SMHasher
+      - TCLAP
+
+    - BSD license:
+      - FreeType
+      - GLEW
+      - JPEG
+      - LibTiff
+      - Protobuf
+      - PCRE
+
+    - Commercial licenses:
+      - FlexLM
+      - Gameware
+      - GLStudio
+      - JRM Technologies SenSimRT and SigSimRT
+      - OpenFlight
+      - SpeedTree
+      - Sundog Triton
+      - Sundog SilverLining
+      - CDB API
+
+    - Custom licenses:
+      - NVidia CG Toolkit (FreeImage Public License)
+      - Boost (Boost Software License)
+      - Poco (Boost Software License)
+      - COLLADA DOM (SCEA Shared Source license)
+      - Thread Building Blocks (GPL license)
+
+    - SQLite: In the public domain.
+
+- **Boost Software License:**
+  - Free use, reproduction, distribution, and creation of derivatives allowed.
+  - Copyright notices must be included in all copies and derivatives.
+  - No warranties; no liability for damages.
+
+- **Libraries Used:**
+  - libXML and libICONV used by MAK software (VR-Link, etc.).
+  - Distributed with some MAK products without modifications.
+  - LGPL license applies; more info at GNU's website.
+
+- **MAK RTI:**
+  - Implements HLA 1.3, 1516, and HLA Evolved interface specifications.
+  - Facilitates application data exchange through RTI calls.
+  - Optimized for high performance in real-time simulation.
+  - Fully compliant with relevant HLA Interface Specifications (MSCO verification).
+
+- **Documentation:**
+  - HLA specifications available from respective owners' websites.
+  - "HLA 1516" or "1516" refers to SISO DLC HLA API 1516 specification in this manual.
+
+- **Terminology**:
+  - "HLA Evolved" = IEEE 1516-2010
+  - "HLA 1516" is used generically when discussing aspects applicable to both HLA 1516 and HLA Evolved
+
+- **Compatibility**:
+  - MAK RTI 1.3:
+    - Implements HLA 1.3 API, ensuring link-compatibility with other HLA compliant RTIs
+  - MAK RTI 1516:
+    - Supports dynamic linking using SISO DLC HLA API 1516, compatible with other RTIs using the same API
+  - MAK RTI HLA Evolved (IEEE 1516-2010):
+    - Incorporates SISO Dynamic Link Compatible API for compatibility without recompilation
+    - Offers additional features like Modular FOMs and improved reliability
+
+- **File Formats**:
+  - MAK RTI supports both FED (HLA 1.3) and FDD (1516 specifications) files
+  - File extensions:
+    - FDD: .xml or .fdd
+    - FED: typically .fed or .mtl, but other extensions are also accepted
+
+- **FED File Location**:
+  - By default, MAK RTI requires each federate to have read access to the FED file
+
+1. **FED File Distribution:**
+   - Federates can receive the FED file when joining a federation.
+   - Ensure all federates and `rtiexec` have access to the FED file before running an HLA application.
+
+2. **RTI Initialization Data File (RID):**
+   - The RID file configures an RTI, written in MAK Technologies Lisp (MTL).
+   - All federates and `rtiexec` must locate their respective RID files.
+
+3. **FED vs FDD Files:**
+   - For MAK RTI, FED and FDD files serve the same purpose and are interchangeable.
+
+4. **Network Compatibility:**
+   - MAK RTI is not compatible with other vendors' RTIs due to low-level network differences.
+   - All federates in a federation must use the same RTI.
+
+5. **RTIspy Plug-in API:**
+   - This API enables monitoring and modifying the internal state and behavior of the RTI.
+
+6. **Support for HLA 1516 Specification:**
+   - MAK RTI 1516 supports all services defined by the HLA 1516 interface specification.
+   - It implements SISO-STD-004.1-2004, addressing API bugs and ensuring compatibility among different RTI implementations.
+
+**Additional Key Points:**
+
+- **FED File Specifications:** For more details on specifying the FED file, refer to page 6-2 of the relevant documentation.
+- **RTI Initialization Data File (RID) Access:** If `rtiexec` is running, it also needs access to the appropriate RID files.
+
+- **API Changes (HLA API PDG):**
+  - Migrated away from templates for defining API classes.
+  - Implemented pImpl idiom for handles, decoupling class interfaces from private member declarations.
+  - Used simple enumerations and passing parameters by reference instead of auto_ptr (except for factories).
+  - More closely resembles HLA 1.3 API than the original IEEE 1516 API.
+
+- **MAK RTI 1516 API Differences:**
+  - Uses an RTI namespace instead of a top-level RTI class.
+  - Still uses templates for handles and STL maps for attribute handle/value pairs.
+  - Operates internally on narrow strings (std::string), converting wide strings (std::wstring) passed through the API.
+
+- **MAK RTI Interoperability:**
+  - All versions share the same on-the-wire protocol, allowing some interoperability between MAK RTI 1516/HLA Evolved and MAK RTI 1.3 for a subset of services.
+  - Non-interoperable aspects include:
+    - Ownership management: Not interoperable between 1.3 and 1516 APIs; Attribute Ownership Release Denied service is new in HLA Evolved.
+    - MOM: Not interoperable between any of the three specifications (1.3, 1516, HLA Evolved).
+    - DDM services: Require special consideration due to differences in routing spaces.
+  - Natural FOM files can be used when interoperating if they have symmetric class and attribute/parameter definitions.
+  - Publish/subscribe services:
+    - Additive policy for 1516 and HLA Evolved implementations.
+    - Replacement policy for MAK RTI 1.3 implementation, which may cause conflicts in mixed federations.
+
+- **Workarounds:**
+  - Enable `RTI_processUnknownUpdatesForDiscovery` to mitigate discovery conflicts when interoperating with 1.3 federates.
+  - Place 1.3 routing space dimensions into a global routing space for DDM interoperability between 1.3 and 1516 APIs.
+
+- **MAK RTI Benefits:**
+  - Promotes link compatibility with other RTI vendors by implementing against the SISO 1516 API, unlike the original IEEE 1516 API that only allowed compile-time compatibility.
+  - Allows federates built using one RTI to execute with different RTI components without recompiling.
+
+1. **Federates & Region Manipulation:**
+   - HLA 1.3 federates can manipulate regions using global space dimensions when 'Extended HLA Version Compatibility' is enabled.
+   - Disabling this feature retains FOM routing spaces for DDM services, ensuring interoperability between HLA 1516 and HLA Evolved.
+
+2. **Interoperability:**
+   - FOM modules are interoperable among HLA 1516, HLA Evolved, and the MAK RTI.
+   - Update Rate Reduction works across protocols if the RTI settings file defines matching update rates in the HLA Evolved FOM.
+
+3. **MAK RTI Concepts:**
+   - The MAK RTI LRC (Library Reference Count) is thread-safe but not re-entrant by default to optimize performance.
+   - Multiple federate threads can create separate instances of the LRC within a single process, benefiting federates joining multiple federations simultaneously.
+   - To ensure re-entrancy:
+     - Use the asynchronous callback processing model, allowing multiple federate threads to access the RTI Ambassador simultaneously with callbacks in a new thread created by the RTI.
+     - Alternatively, create a separate thread for RTI access and provide thread-safe communication from the RTI thread to other federate threads.
+
+4. **Network Topologies:**
+   - MAK RTI supports various network topologies (LAN, WAN) with different transport options:
+     - Best Effort Transport on a LAN.
+     - Reliable Transport and TCP Forwarding on a LAN.
+     - Best Effort Transport on a WAN.
+     - Centralized TCP Forwarding on a WAN.
+     - Distributed Forwarding on a WAN.
+
+The MAK RTI supports four process models that dictate how it manages network I/O, message processing, and callbacks:
+
+1. **Fully Synchronous**:
+   - All RTI tasks occur in one thread.
+   - Triggered by the federate's `tick()` call.
+
+2. **Asynchronous Networking/Synchronous Message Processing and Callbacks**:
+   - Network input handled separately but processed during `tick()`.
+   - Callbacks delivered synchronously with message processing.
+
+3. **Asynchronous Networking and Message Processing/Synchronous Callbacks**:
+   - Both network input and message processing occur in separate threads.
+   - Callbacks delivered synchronously during `tick()`.
+
+4. **Fully Asynchronous**:
+   - All tasks (network I/O, message processing, callbacks) run in separate threads.
+   - Callbacks delivered asynchronously.
+
+The `tick()` function (and its equivalents) is crucial:
+
+- Triggers Federate Ambassador callbacks (updates, interactions, time advances).
+- In most models, callbacks are only delivered during `tick()`.
+- Regular `tick()` calls by federates ensure smooth operation and prevent RTI CPU starvation.
+
+Federates using synchronous or asynchronous I/O modes should tick frequently to avoid:
+
+- Network buffer overflows in synchronous mode (leading to dropped messages).
+- Slow time advance grants due to infrequent `tick()` calls, affecting all time-constrained federates.
+
+1. **Network Buffer Overflow:**
+   - When a federate's network buffer overflows, reliable messages start accumulating at its RTI Forwarder.
+   - The forwarder increases memory usage until the federate clears the message backlog.
+
+2. **Preemptive RTI Ticking:**
+   - Federates may connect to the RTI before participating in a federation.
+   - They must still 'tick' the RTI (even before joining) to avoid reliable messaging issues, affecting both synchronous and asynchronous I/O mode federates.
+
+3. **Asynchronous I/O:**
+   - Allows better scheduling of time and response to peaks in I/O processing.
+   - Separate I/O thread processes network I/O operations independently from other internal RTI processing, improving federate's ability to handle time-critical tasks.
+   - Federate must still invoke `tick()` for internal processing and callbacks.
+
+4. **Disadvantages of Asynchronous I/O:**
+   - Can increase message transmission latency due to less determined timing of sending and receiving messages.
+   - Federate thread may fail to yield enough processing cycles to the I/O thread, leading to high latency, buffer overflows, and potential detrimental operating system mechanisms.
+   - Parameters in RTI settings can configure interaction between federate LRC thread and I/O thread. By default, LRC yields to I/O thread during `tick()` call to ensure I/O thread execution.
+
+**Additional Key Points:**
+
+- **MAK RTI Process Model:** The text mentions the MAK RTI Process Model but doesn't provide details about it.
+- **RTI Ambassador:** The term "RTI Ambassador" is used, but its role or function isn't explained in the provided text chunk.
+
+1. **Multi-threading Parameter:**
+   - Don't modify this parameter without ensuring your federate can manage multi-threading issues effectively.
+   - Adequately yield execution to other threads.
+
+2. **Message Processing Modes:**
+   - **Asynchronous Message Processing:** Balances asynchronous I/O and callbacks. RTI handles network I/O and message processing, but federate ambassador callbacks are queued for synchronous delivery during `tick()` or `evokeCallback`. Reduces federate's burden of calling `tick()`, potentially improving response/efficiency, but requires memory caching.
+   - **Asynchronous Callbacks:** RTI processes messages directly in the asynchronous thread. Federate Ambassador callbacks must be thread-safe. Enabled in RTI settings; HLA_IMMEDIATE callback model forces this mode.
+
+3. **Network Transport:**
+   - RTI uses either UDP (best effort) or TCP (reliable) transport.
+   - On a LAN, best effort uses UDP multicast/broadcast with no receipt guarantee and minimal overhead.
+   - Reliable transport on a LAN uses TCP forwarding to minimize CPU processing time and network connections. MAK RTI supports centralized/distributed TCP forwarding.
+
+**Key Points:**
+- Carefully manage multi-threading when adjusting relevant parameters.
+- Understand the differences between asynchronous message processing and callbacks, choosing the most suitable for your federate's needs.
+- Select appropriate network transport based on LAN/WAN usage and required reliability.
+- Utilize TCP forwarding for reliable transmissions, considering centralized or distributed approaches to optimize performance.
+
+- **LAN Reliable Transport Configuration:**
+  - See "Configuring UDP and Centralized TCP Forwarding on a LAN" (page 10-2).
+
+- **WAN Transport:**
+  - **Best Effort (UDP):**
+    - Most routers don't support broadcast/multicast messages.
+    - Configure recipient addresses or use packet forwarding strategy.
+      - Distributed UDP forwarding: See "Distributed Forwarding" later in the section.
+      - Configuring UDP over a WAN without distributed forwarding: page 10-5.
+
+  - **Reliable (TCP):**
+    - Centralized TCP forwarding on a WAN provides no additional performance benefits; distributed forwarding is recommended.
+    - Distributed forwarding supports both TCP and UDP, allows creating a network of forwarders managing subsets of federates. Benefits include spreading network load and optimizing bandwidth use. Configuration details in Chapter 10, "Configuring Message Forwarding".
+
+- **Compiling and Linking with MAK RTI:**
+  - Details provided for Linux, Windows, HLA 1.3, HLA 1516, and HLA Evolved.
+  - Library names differ based on RTI version (HLA 1.3, HLA 1516, HLA Evolved) and bitness (32-bit, 64-bit).
+  - Table lists libraries used for each version.
+  - Workaround for running 64-bit applications with incorrect library names: delete 32-bit libraries or recompile the application.
+
+The provided text guides users through compiling and linking applications with MAK RTI libraries for HLA versions 1.3, 1516, and Evolved on Windows and Linux platforms.
+
+**Key Points:**
+
+- **Include necessary headers:**
+  - HLA 1.3: `#include <RTI.hh>`
+  - HLA 1516 & Evolved: `#include <RTI1516.h>` or `#include <RTI1516E.h>`
+
+- **Add MAK RTI directories to search paths:**
+  - Include directories: `./include/HLA<version>` (e.g., `HLA13`, `HLA1516`)
+  - Library directories: `./lib`
+
+- **Link with appropriate libraries:**
+  - HLA 1.3:
+    - Linux: `-lRTI-NG -lfedtime`
+    - Windows (release): `libRTI-NG.lib libFedTime.lib ws2_32.lib netapi32.lib comctl32.lib`
+    - Windows (debug): `libRTI-NGd.lib libFedTimed.lib ws2_32.lib netapi32.lib comctl32.lib`
+  - HLA 1516 & Evolved:
+    - Linux: `-lrti1516 -lfedtime1516`
+    - Windows (release): `rti1516.lib fedtime1516.lib ws2_32.lib netapi32.lib comctl32.lib`
+    - Windows (debug): `rti1516d.lib fedtimed1516.lib ws2_32.lib netapi32.lib comctl32.lib`
+
+- **Additional steps for Windows:**
+  - Set Preprocessor Definitions: `RTI_USES_STD_FSTREAM=1`
+  - Set Run-time Library:
+    - Release: `Multithreaded DLL (/MD)`
+    - Debug: `Multithreaded Debug DLL (/MDd)`
+  - Ignore Specific Libraries:
+    - Release: `msvcrtd.lib`
+    - Debug: `msvcrt.lib`
+  - For MAK RTI plug-ins, add `C:\MAK\makRti4.6\include\MAK` to Additional Include Directories
+
+1. **MAK RTI Plug-ins:**
+   - Add `C:\MAK\makRti4.6\include\MAK` to Additional Include Directories.
+   - Set Run-time Library:
+     - Release: `/MD`
+     - Debug: `/MDd`
+
+2. **Linking to HLA 1516 Libraries:**
+   - Add `C:\MAK\makRti4.6\lib` to Additional Library Directories.
+   - For Release:
+     - Additional Dependencies: `librti1516.lib`, `libfedtime1516.lib`, `ws2_32.lib`, `netapi32.lib`, `comctl32.lib`
+     - Ignore Specific Library: `msvcrtd.lib`
+   - For Debug:
+     - Additional Dependencies: `librti1516d.lib`, `libfedtime1516d.lib`, `ws2_32.lib`, `netapi32.lib`, `comctl32.lib`
+     - Ignore Specific Library: `msvcrt.lib`
+
+3. **Compiling and Linking with HLA Evolved:**
+   - Replace '1516' with '1516e' and 'HLA1516' with 'HLA1516E' in HLA 1516 instructions.
+
+4. **Federation Time:**
+   - RTI requires time implementation libraries.
+   - MAK RTI provides default time implementations (`libfedtime`, `libfedtime1516`).
+   - Federates can use different time libraries during compilation and execution, even if not using time management services.
+
+5. **Time Implementations:**
+   - HLA 1.3: Uses `RTIfedTime` in `libfedtime`.
+   - HLA 1516:
+     - Supports integer (`RTI_Integer64Time`) and floating-point (`RTI_Float64Time`) representations.
+     - Floating-point is the default representation if none specified during federation creation.
+
+- **Logical Time Derivations:**
+  - **Integer:** `LogicalTimeFactoryImplInteger`, `LogicalTimeImplInteger`, `LogicalTimeIntervalImplInteger`
+  - **Floating Point:** `LogicalTimeFactoryImplFloat`, `LogicalTimeImplFloat`, `LogicalTimeIntervalImplFloat`
+  - **Deprecated Floating Point:** `LogicalTimeFactoryImpl`, `LogicalTimeImpl`, `LogicalTimeIntervalImpl`
+  - **Factory-Factory:** `LogicalTimeFactoryFactory`
+
+- **Usage:**
+  - RTI uses factory-factory and factory classes to create logical time factories.
+  - Federates should use concrete logical time derivations directly for time management services.
+
+- **HLA Evolved Time Implementation:**
+  - Requires `libfedtime1516e` containing `LogicalTimeFactory-Factory`.
+  - RTI provides `HLAlogicalTimeFactoryFactory` to create factories for integer and floating-point implementations.
+  - Time implementation can be specified when creating the federation using strings like `HLAfloat64Time` or `HLAinteger64Time`. Default is floating point.
+
+- **HLA Evolved API Logical Time Derivations:**
+  - **Integer:** `HLAinteger64TimeFactory`, `HLAinteger64Time`, `HLAinteger64Interval`
+  - **Floating Point:** `HLAfloat64TimeFactory`, `HLAfloat64Time`, `HLAfloat64Interval`
+
+- **Java Bindings for MAK RTI:**
+  - Provides a thin layer of C++ code to expose the native C++ API to Java applications.
+
+- **RTI Settings:**
+  - Chapter provides general information about editing RTI settings; details can be found in `rid.mtl` file, manual sections, and Appendix A.
+
+- **RTI Initialization Data (RID) File:**
+  - MAK RTI's configuration file controlling networking, services, and performance.
+  - Read by rtiexec, RTI Forwarder, and each federate's Local RTI Component during initialization.
+
+- **Selecting RTI Settings:**
+  - Choose between using an existing configuration or a specific RTI Settings configuration from the RTI Assistant.
+  - Edit common settings in the RTI Assistant; use text editor for other settings.
+
+- **Search Order for RID Files:**
+  - Search order depends on specification:
+    - `RTI_RID_FILE` environment variable
+    - Default rid.mtl file
+    - Other configured RTI Settings files
+
+- **Additional Topics (briefly mentioned):**
+  - Editing, adding custom configurations, importing/exporting/deleting settings.
+  - Displaying settings in Federations View, configuring HLA switch values and advisory messages.
+  - Ensuring RTI settings consistency, specifying settings programmatically.
+  - Using the RTI Settings File Consistency Checker.
+
+- **RTI_RID_FILE Environment Variable:**
+  - Not specified: Searches for 'rid.mtl' in working directory  `RTI_CONFIG/rid.mtl`  Uses defaults if not found.
+  - Specified: Tries to open file in `RTI_RID_FILE`  `RTI_CONFIG/RTI_RID_FILE`. No defaults; fails if not found.
+  - HLA 1516 (not Evolved): Can be overridden by passing a wstring to `createRTIambassador`.
+
+- **Windows RTI Chooser:** Specifies RID file for particular RTI version, handles environment settings.
+
+- **Editing RTI Settings:**
+  - Text editor or RTI Assistant (common settings).
+  - Default configuration: 'Standard' based on `rid.mtl`.
+  - Save location: Windows  `%APPDATA%\MAK\RTI\4.6\RIDS`, Linux  `~/.mak/RTI/4.6/RIDS`.
+  - Edit using RTI Assistant:
+    1. Open RTI Assistant.
+    2. Right-click icon in system tray, choose 'RTI Preferences'.
+    3. Select 'RTI Settings Page', choose configuration, click 'Edit'.
+
+**Time Management & Data Distribution:**
+- **Enable Time Management (RTI_timeMgmt)**: Enables/disables time management services. Default: Disabled.
+- **Enable Data Distribution Management (RTI_dataDistMgmt)**: Enables/disables data distribution management (DDM) services. Default: Enabled.
+
+**Name Reservation & Update Rate Reduction:**
+- **Enable Name Reservation (RTI_enableNameReservation)**: Enables/disables name reservation service in HLA 1516 or HLA Evolved. Default: Enabled.
+- **Enable Update Rate Reduction (RTI_enableUpdateRateReduction)**: Enables/disables update rate reduction. Default: Disabled.
+
+**Management Object Model (MOM) Services:**
+- **Enable MOM (RTI_momServiceAvailable)**: Enables/disables MOM services. Default: Disabled.
+- **MOM Federate Update Interval**: Specifies default interval for MOM Federate object updates, in seconds. Default: Off (no updates sent).
+- **Enable Exception Logging**: Enables/disables MOM exception logging. Default: Disabled.
+
+**Save/Restore & Fault Tolerance:**
+- **Save/Restore Timeout**: Specifies wait time for save/restore operation before indicating failure. Default: 120 seconds.
+- **Save/Restore Directory**: Specifies directory used for writing and reading save files.
+- **Save Transient Messages**: Enables/disables saving of transient messages during a save, to be delivered upon restore. Default: Disabled.
+- **Enable Federate Heartbeat (RTI_enableFederateHeartbeat)**: Enables/disables federates sending heartbeats. Default: Disabled.
+- **Heartbeat Interval (RTI_federateHeartbeatInterval)**: Specifies frequency of heartbeat messages, in seconds. Valid only if Enable Federate Heartbeat is enabled. Default: 10.
+- **Timeout Interval (RTI_federateTimeoutInterval)**: Specifies time period for receiving heartbeats before forcibly removing the federate. Valid only if Enable Federate Heartbeat is enabled. Default: 25.
+
+**Reconnections & Orphaned Objects:**
+- **Enable Reconnections (RTI_reconnectEnabled)**: Specifies LRC attempts to reconnect to RTI Forwarder after a TCP connection loss. Default: Disabled.
+- **Federate Reconnect Pause (RTI_federateReconnectPause)**: Specifies time, in seconds, to wait before trying to reconnect to the RTI Forwarder if Enable Reconnections is enabled. Default: 5.
+- **Rtiexec Reconnect Pause**: Amount of time rtiexec waits to reconnect when it loses its TCP connection. Should be less than Federate Reconnect Pause.
+- **Automatically Delete Orphans (RTI_deleteOrphans)**: Specifies whether objects owned by a terminated federate will be automatically deleted. Default: Enabled.
+
+**Message Throttling:**
+- **Enable Message Throttling**: Enables/disables throttling of transmission and receipt of internal messages, and enables/disables buffering of provideAttributeValueUpdate callbacks in HLA 1516 or HLA Evolved. Default: Disabled.
+
+- **Message Throttling Settings (enabled by RTI_enableMessageThrottling):**
+  - **Transmit Delay:** Delays processing requests to control message flow.
+  - **Transmit Rate:** Sets the number of messages per second sent when throttling is enabled.
+  - **Auto Provide Delay:** Buffers automatic provideAttributeValueUpdate callbacks in HLA 1516 or Evolved to limit provides requested.
+  - **All Provides Delayed:** Applies Provide Delay to all update requests if throttling and Auto Provide Delay are enabled.
+
+- **Discovery Message Bundling:**
+  - **Discovery Message Delay (RTI_discoveryMsgBundlingDelay):** Delays sending discovery messages to bundle them together, reducing traffic and processing time.
+
+- **Advanced Connection Settings:**
+  - **Send Internal RTI Messages Reliable (TCP) (RTI_internalMsgReliableWhenUsingRtiexec):** Enables reliable transport for internal bookkeeping messages when using rtiexec.
+  - **Use Smart Forwarding with Internal Messages (RTI_internalMsgSmartForwardingWhenUsingRtiexec):** Enables smart forwarding transport for internal and FOM messages, reducing message count in a federation.
+
+- **Forwarder Listens to Local UDP Messages:** Controls whether RTI Forwarder listens to local UDP multicast traffic to distribute to other RTI Forwarders.
+
+- **Response Interval (RTI_responseInterval):** Specifies the time the local RTI component waits for a response from rtiexec during specific service calls.
+
+- **Smart Forwarding Level (RTI_smartForwardingLevel):** Configures sender-side filtering modes for subscription-based routing and disabling sends for unsubscribed updates/interactions.
+
+- **FOM Data Transport Type:** Sets the transport type (best effort, reliable, or forced best effort) for FOM data based on configuration settings and compliance requirements.
+
+- **Max Forwarder Queue (RTI_maxForwarderQueue):**
+  - Controls message queue size for messages exceeding receive buffer.
+  - Federates are dropped when full; default (-1) queues indefinitely until processed or memory exhaustion.
+
+- **Max Number of Federates (RTI_maxNumFederates):**
+  - Limits federates in a federation with sender-side filtering enabled.
+  - Default: 511. Increasing this value increases message overhead.
+
+- **Max Objects Per Federate (RTI_maxObjectsPerFederate):**
+  - Sets maximum objects a federate can instantiate.
+  - Default: 8,388,607.
+
+- **HLA Extend Compatibility Between HLA Versions (RTI_extend13and1516interop):**
+  - Enables interoperability between HLA 1.3 and 1516 versions.
+  - Default: Enabled.
+
+- **FOM Consistency Checking (RTI_strictFomChecking):**
+  - Strictly checks FDD file format when enabled; relaxes checks when disabled.
+  - Affects HLA 1516 or HLA Evolved FDD files. Default: Enabled.
+
+- **Attribute Ownership Unavailable Callback (RTI_strictHLA1516eAttributeOwnershipUnavailableCallback):**
+  - Forces strict attribute ownership unavailable callback when enabled; may not occur in certain scenarios when disabled.
+  - Default: Enabled.
+
+- **Switch Table Selection (RTI_preferRidToFedSwitchTable):**
+  - Specifies using RID parameters or FED file-defined switch tables. Default: Enabled (use RID parameters).
+
+- **RTI Switches:**
+  - Auto-Provide, Convey Region Designator, Convey Producing Federate, Service Reporting, Exception Reporting, Delay Subscription Evaluation:
+    - Control specific RTI behaviors; enabled/disabled with 'Override FED Switches' parameter. Defaults vary by switch.
+
+All these settings are part of Table 4-1: RTI Settings in the MAK Technologies RTI Reference Manual (pages 4-12 to 4-13).
+
+- **Advisory Switches (Require Override FED Switches Enabled):**
+  - `RTI_delaySubscriptionEvaluationSwitch`: Enables/Disables Attribute Scope Advisory.
+    - Default: Disabled.
+  - `RTI_attributeScopeAdvisorySwitch`: Enables/Disables Attribute Relevance Advisory.
+    - Default: Disabled.
+  - `RTI_objectClassRelevanceAdvisorySwitch`: Enables/Disables Object Class Relevance Advisory.
+    - Default: Enabled.
+  - `RTI_interactionRelevanceAdvisorySwitch`: Enables/Disables Interaction Relevance Advisory.
+    - Default: Enabled.
+
+- **Diagnostic Output Settings:**
+  - **Crash Dump Configuration:**
+    - `LRC Minidumper Level`: Configures crash dump file creation. Options are No Dump, Minidump (with/without prompt), Silent Exit.
+      - Default: No Dump.
+  - **Notification Messages:**
+    - `Notify Level`: Specifies notification message categories to print. Default: Info.
+    - `Detach Notify Level`: Detaches notifications at the given level and above from standard output. Default: Detach All.
+  - **Log Files:**
+    - `Log File Directory`: Specifies log file output directory. Default: Working directory.
+    - `LRC Log File Name`: Enables logging to a file with the specified name. Default: makRti.log.
+    - `RTI Exec Log File Name`: Enables/disables rtiexec log file and specifies its name. Default: rtiExec.log.
+    - `Forwarder Log File Name`: Enables/disables RTI Forwarder log file and specifies its name. Default: rtiForwarder.log.
+    - `Reuse Log File`: Enables/disables writing logs to the same file specified by Log File Name. Default: Enabled.
+  - **Service Warnings and Exceptions:**
+    - `Warnings for Disabled Service`: Specifies if RTI Assistant displays a message when an exception is thrown for a disabled service. Default: Enabled.
+    - `Exception for Disabled Service`: Specifies if function calls throw an exception when calling a non-activated MAK RTI service. Default: Enabled.
+
+**Key Points:**
+- Override FED Switches must be enabled to use certain advisory switches.
+- Diagnostic output settings control crash dump creation, notification messages, log files, and their behavior.
+- Warnings and exceptions for disabled services can be enabled or disabled.
+
+1. **RTI Settings (Table 4-1):**
+   - **Dump RID & Dump FOM:** Enable/disable dumping of the contents of the Runtime Infrastructure (RTI) Interaction Record (RID) file and printing of the Federated Object Model (FOM) to the log file at startup.
+   - **Processing Model:**
+     - Synchronous mode: Asynchronous I/O is not used, reducing dependency on tick rate but may cause message drops.
+     - Asynchronous I/O: Network reads and writes are performed in an asynchronous thread, reducing dependency on tick rate. Default setting.
+     - Asynchronous Callbacks: Messages are processed, and callbacks are invoked in an asynchronous thread. The federate must be able to receive Federate Ambassador callbacks asynchronously in a thread-safe way.
+   - **I/O Period & Tick Wait Period:** Set the amount of time polling operations take (not used in Windows) and determine the smallest increment of time a tick will cause a federate to wait for messages from the I/O thread when using asynchronous I/O. Defaults are 0.1 seconds and 0.0, respectively.
+   - **Max I/O Queue & Max I/O Count per Tick:** Limit how many messages can be queued to send before blocking (default: 500,000) and specify the number of times the thread can cycle before it must yield (default: 50,000).
+
+2. **RTI Assistant:**
+   - **Network Statistics Monitoring:** Enable/disable viewing a federate's network statistics in the RTI Assistant's RTIspy window via a plugin. When enabled, certain constraints apply, and some plugins may not work or be ignored.
+   - **Network Testing Enabled:** Enable/disable network testing. Default is Enabled.
+
+3. **TCP Settings:**
+   - **TCP No Delay:** Configure the RTI to emphasize minimal latency or maximum throughput by enabling or disabling the TCP_NODELAY socket option. Default is Enabled (minimal latency).
+   - **TCP Buffer Size:** Specify the size of the buffer into which TCP packets get read. Default is 500,000 bytes.
+   - **Multicast TTL:** Set an integer value that gets used as the TimeToLive parameter in the header of multicast packets. Default is 2.
+   - **Socket Receive/Send Buffer Size:** Specify the size of the TCP and UDP network receive/send buffers to increase the RTI's tolerance of peak network loading. Defaults are 2,000,000 bytes (receive) and 200,000 bytes (send).
+
+4. **Bundling:**
+   - **Enable Packet Bundling:** Bundle messages together into a single TCP packet or UDP datagram up to the specified size limit. Default is Enabled.
+
+5. **Additional Notes:**
+   - Some settings are not used in Windows due to its event-driven nature.
+   - For Asynchronous Callbacks, ensure the federate can receive Federate Ambassador callbacks asynchronously and in a thread-safe way.
+
+- **Packet Bundling:**
+  - Enables bundling of TCP packets and UDP datagrams.
+  - Bundle size can be specified, up to the network's Maximum Transmission Unit (MTU), with a default of 1400 bytes.
+  - Option to send bundled packets immediately after the I/O period or wait for full bundle:
+    - Enabling this prevents latency overhead but may result in unbundled messages at low throughput.
+
+- **Compression:**
+  - Supports compression of RTI message payloads over TCP and UDP.
+  - Compression level can be set from 1 (minimal) to 9 (maximum), with a default of 1.
+  - Enabled independently for TCP and UDP connections.
+
+- **Licensing:**
+  - RTI Exec performs licensing: enables/disables license checkout for each joining federate, with a default setting of disabled.
+
+- **RTI Settings Management:**
+  - Standard settings can be edited via the RTI Assistant.
+  - Custom configurations can be added and managed through RTI Preferences:
+    - To add a custom configuration, open RTI Preferences, select the RTI Settings Page, click 'Add', name the configuration, edit settings as desired, then click 'OK'.
+  - Option to force unlicensed version without checking for a license (not recommended for licensed users).
+
+- **Unlicensed Mode Parameters:**
+  - `RTI_forceUnlicensedForTwo` & `RTI_disableUnlicensedForTwo`: Enable/disable unlicensed mode in Windows.
+    - When enabled, federates require a license to run (default is disabled).
+
+- **Managing RTI Settings Configurations:**
+  - Use the RTI Assistant:
+    - Import: Open 'RTI Preferences' > Select 'RTI Settings Page' > Click 'Import Configuration'.
+    - Delete: Select configuration > Click 'Delete' button.
+
+- **Viewing Configuration Settings:**
+  - Right-click RTI Assistant icon > Select 'Federations View'.
+  - Select federate > Choose 'Federate RID Parameters'.
+  - 'Compliant' column indicates if parameter values meet fully compliant mode.
+
+- **Configuring HLA Switch Values:**
+  - Override FDD file settings with RTI settings file values.
+    - Enable 'Override FED Switches' RTI setting for this.
+
+- **Force Full Compliance:**
+  - Enabled via RTI Assistant or settings file.
+  - Disables 'Override FED Switches' and uses values from FDD file.
+
+- **Advisory Messages Configuration:**
+  - Default states for advisory callbacks in RTI settings:
+    - Object Class Relevance: Enabled
+    - Attribute Relevance: Disabled
+    - Interaction Relevance: Enabled
+    - Attribute Scope Advisory: Disabled
+  - FDD file's advisory switches override these defaults if 'Override FED Switches' is enabled.
+
+- **RTI Settings Consistency:**
+  - Not all RTI settings files need to be identical.
+  - Parameters like `RTI_useRtiExec`, `RTI_udpPort`, and `RTI_tcpPort` must match across the federation for communication.
+  - The RTI can check settings file consistency.
+
+- **Programmatic Specification of RTI Settings in HLA:**
+  - HLA 1516 and Evolved APIs allow passing configuration parameters to the RTI Ambassador as strings.
+  - Strings can specify an RTI settings file or additional settings, overriding defaults.
+  - Syntax: `RTI_RID_FILE pathToRIDFile # lisp_expression1*`
+  - If `RTI_RID_FILE` is included and the file is not found, configuration fails.
+
+- **Default RTI_RID_FILE Search Order:** If `RTI_RID_FILE` is omitted, MAK RTI uses its default search order to find a global baseline RID file using `RTI_RID_FILE` or `RTI_CONFIG` environment variables.
+
+- **RTI Settings File Consistency Checker:**
+  - The MAK RTI can verify the consistency of RTI settings across all federation executions.
+  - The rtiexec's RTI settings file acts as a master, and all other settings files are compared to it.
+  - Enabling consistency checking increases startup time for all federates but ensures certain parameters are identical throughout the federation. It requires `rtiexec` and is unavailable in lightweight mode.
+
+- **Enabling RTI Settings Consistency Checking:**
+  - Can be enabled/disabled on a per-federate basis using the `RTI_ridConsistencyChecking` parameter:
+    - 0: Disable consistency checking.
+    - 1: Enable consistency checking and automatically correct differences in federate-wide parameter settings.
+    - 2: Enable consistency checking and throw a `FederateInternalError` exception if the RID consistency check fails.
+  - Reliable messaging is recommended for internal RTI messages when using consistency checking.
+
+- **FOM Consistency Feature:**
+  - Requires consistent 'Enable TCP Compression' settings among all participants to function properly.
+  - The workaround is to ensure consistent settings before launch.
+
+- **Selecting Parameters to be Checked:**
+  - By default, the consistency checker tests a large subset of parameters that must be consistent across most federations.
+  - You can change the consistency set using `RTI-addRidParametersToOverride` and `RTI-removeRidParametersToOverride` parameters in the rtiexec's RTI settings file:
+    - Uncomment the desired parameter and list each parameter to be added or removed from the set.
+  - Some parameters, like TCP/UDP Compression Levels, are not checked for consistency by default but can be added to the set.
+
+- **Compression Level Override:**
+  - Federations enabling compression can add the following parameters to the RID file:
+    - `RTI_tcpCompressionLevel`
+    - `RTI_udpCompressionLevel`
+
+- **Federation-Wide Settings:**
+  - The following RTI settings must be consistent across all federates:
+    - Enabling big messages (`RTI_enableBigMessage`)
+    - TCP and UDP port numbers (`RTI_tcpPort`, `RTI_udpPort`)
+    - Packet bundling (`RTI_enablePacketBundling`)
+    - TCP and UDP compression (`RTI_enableTcpCompression`, `RTI_enableUdpCompression`)
+    - Internal message reliability when using RTIexec (`RTI_internalMsgReliableWhenUsingRtiexec`)
+    - Multicast discovery enabled (`RTI_mcastDiscoveryEnabled`)
+    - RID consistency checking (`RTI_ridConsistencyChecking`)
+    - Using RTIexec (`RTI_useRtiExec`)
+  - Some settings may vary, such as the TCP forwarder address (`RTI_tcpForwarderAddr`) when using distributed forwarders.
+
+- **MAK RTI Applications:**
+  - `rtiexec`: Centralizes RTI functionality, required for full compliance and services like:
+    - Reliable transport (TCP)
+    - Time management
+    - Synchronization points
+    - Federation save and restore
+  - `RTI Assistant`: A tool for configuring and monitoring the RTI environment.
+  - `RTI Forwarder Application`: Handles reliable message forwarding, separate from rtiexec processing.
+  - `RTI Command Line Tool`: Lists and deletes federates.
+
+- **Lightweight Mode Trade-off:**
+  - If not using services that require `rtiexec`, users can choose between:
+    - Lightweight mode's convenience
+    - Full compliance with `rtiexec`
+  - Object attribute updates and interactions are exchanged directly among federates, regardless of `rtiexec` use.
+  - The rtiexec's centralized processing mainly affects federates during create, destroy, join, and resign operations.
+
+- **rtiexec Configuration:**
+  - Use reliable transport mode for internal messages to ensure delivery.
+  - Configure rtiexec using RTI settings or command-line options (Table 4-1).
+  - Consider enabling packet forwarding and choosing between best effort and reliable transport.
+
+- **Diagnostic Messages:**
+  - Enable diagnostic data for troubleshooting issues.
+  - Log rtiexec output to a file with a unique identifier when 'Reuse Log File' is enabled.
+  - Suppress diagnostics using the '-q' command-line option.
+
+- **RTI Assistant (User Interface):**
+  - Automatically starts and monitors RTI activity, communicates with network assistants.
+  - Allows viewing federation information, configuring connections/behaviors, running latency tests, managing remote assistants, and editing RTI settings.
+  - Federate-specific features like viewing logs and resigning federates are available for local machine federates only.
+
+- **RTI Assistant Configuration:**
+  - Configure startup behavior, notification/log behaviors, message display, connection persistence, update request interval.
+  - Clear default license/connection parameters or disable the RTI Assistant using an environment variable.
+
+- **Log Update Interval (RTI Assistant):**
+  - Right-click RTI Assistant icon > Preferences > Notifications and Logs page.
+  - Enter log update interval value in milliseconds.
+
+- **Shutting Down RTI Assistant:**
+  - Right-click system tray icon, select 'Shut Down All'.
+  - Disable 'Shut Down All': Set `RTI_ASSISTANT_REMOVE_SHUT_DOWN_ALL` environment variable.
+  - Local LRCs and rtiexecs affected; remote components unaffected.
+
+- **Configuring RTI Assistant Messages:**
+  - Change default display (popup vs. notification) in 'Preferences' > 'Notifications and Logs'.
+
+- **Connecting to Remote Assistants:**
+  - Automatically connects to LAN RTI Assistants.
+  - Manually connect to VPN/WAN RTI Assistants for management.
+  - Add connections via 'Preferences' > 'Remote Assistants':
+    - Specify IP address, protocol, and port.
+
+- **Remote Assistant Connections:**
+  - **Automatic LAN Connections:** Cannot be disconnected.
+  - **Manual Connections:**
+    - Connect: Select connection, click 'Connect' button or right-click and choose 'Connect'.
+    - Remove: Select connection, click 'Remove Assistant Connection' button or right-click and choose it.
+
+- **Warning Tick Interval:**
+  - Configurable interval for RTI Assistant to warn about federates not ticking.
+  - Enable and set interval in RTI Preferences (Notifications and Logs page).
+
+- **RTI Assistant Log Windows:**
+  - Common operations:
+    - Pause/Resume: Click 'Pause/Resume' button.
+    - Save: Click 'Save' button, enter filename.
+    - Clear: Click 'Clear' button.
+    - Search: Search for words or phrases in log files.
+  - Assistant Log: Primarily for MAK support use.
+
+- **RTI Assistant Ports:**
+  - Peer port (default: 6003) used for local components and other RTI Assistants.
+  - Client port can be different for communicating with local RTI components.
+  - Set peer port using `RTI_ASSISTANT_PORT` environment variable.
+
+- **Linux Multi-user Setup:**
+  - Each user requires their own instance of the RTI Assistant.
+  - Unique ports are needed for each user's RTI Assistant socket using `RTI_ASSISTANT_CLIENT_PORT`.
+  - RTI Assistants communicate with each other via default or specified ports (`RTI_ASSISTANT_PORT`).
+
+- **Multicast Communication:**
+  - RTI Assistants use UDP multicast for communication, supporting IPv4 (default: `229.7.7.10`) and IPv6 (default: `ff12::7:10`).
+  - Custom multicast addresses can be set using environment variables:
+    - `RTI_ASSISTANT_IPV4_ADDRESS` for IPv4
+    - `RTI_ASSISTANT_IPV6_ADDRESS` for IPv6
+  - Multicast Time-to-Live (TTL) can be set using the `RTI_ASSISTANT_TTL` environment variable (default: 1).
+
+- **Disabling RTI Assistant:**
+  - The RTI Assistant can be disabled by creating an environment variable called `RTI_ASSISTANT_DISABLE`.
+
+- **RTI Forwarder Application:**
+  - MAK RTI uses TCP forwarding for reliable communications via the RTI Forwarder.
+  - rtiexec checks if an RTI Forwarder is running and connects to it or starts one if not running, using the same connection configuration as rtiexec.
+  - Running multiple RTI Forwarders can implement a distributed forwarding scheme.
+
+- **RTI Assistant Command-line Options:**
+  - Table 5-1 lists various command-line options for the RTI Assistant:
+    - `--ignore_rest`: Ignore all subsequent command-line options.
+    - `--Connection`, `-C`: Opens the RTI Connections dialog box.
+    - `--disableMulticast`, `-d`: Disables multicast sending and receiving.
+    - `--Federations`, `-F`: Opens the Federations View.
+    - `--help`, `-h`: Displays a list of command-line options.
+    - `--History`, `-H`: Opens the Notifications History dialog box.
+    - `--autoExit`, `-K`: Automatically exit after the last connection exits or after a timeout.
+    - `--notifyLevel` (level), `-n`: Sets the diagnostic output level.
+    - `--shutdownRequest`, `-s`: Prompts you to shut down the local RTI Assistant and all connected components.
+    - `--forceShutdown`, `-S`: Shuts down the local RTI Assistant and all connected components without prompting.
+    - `--version`, `-v`: Display version information and exit.
+
+**Starting an RTI Forwarder:**
+
+- **From Federations View:**
+  - Right-click RTI Assistant icon  Select 'Federations View'
+  - Choose 'Forwarder'  'Start Up Forwarder', or click 'Start Forwarder' button
+  - Select a connection configuration (edit if necessary to add forwarder address)
+  - Choose desired RTI Settings configuration from the list
+  - Click 'OK'
+
+- **From Command Line:**
+  - Run: `./bin/rtiForwarder.exe options`
+  - If `-M` option not used, select connection configuration and RTI Settings
+  - Utilize command-line options (Table 5-2) to customize settings like multicast address, port, compliance mode, etc.
+
+**Shutting Down an RTI Forwarder:**
+
+- Right-click RTI Assistant icon  Select 'Federations View'
+- Choose the desired connection from 'Current Connections' list
+- Select 'Forwarder'  'Shut Down Forwarder', or click 'Shut Down Forwarder' button
+- Confirm action by clicking 'Yes'
+
+**Key Points:**
+1. Start RTI Forwarder via Federations View or command line.
+2. Command-line options enable customization of forwarder settings.
+3. To shut down, select the connection and confirm the action.
+
+- **RTI Forwarder Command-line Options:**
+  - `-n`, `--notifyLevel`: Sets diagnostic output level.
+  - `-N`, `--networkInterfaceAddr`: Specifies IP address of network card for forwarder.
+  - `-p`, `--usePreconfiguredRid`: Indicates RID file is preconfigured RTI settings, not a file path.
+  - `-P`, `--setUdpPort`: Specifies port to listen on (equivalent to `RTI_udpPort` parameter).
+  - `-R`, `--setRidFileName`: Specifies RID file to use, overriding `RTI_RID_FILE` environment variable.
+  - `-r`, `--routesFileName`: Specifies forwarder route file, overriding `RTI_forwarderRoutesFile` in RID file.
+  - `-t`, `--tcpAddress`: IP address used for TCP connections (reliable transport).
+  - `-T`, `--setTcpPort`: Specifies port to connect to RTI Forwarder using TCP (equivalent to `RTI_tcpPort` parameter).
+  - `-v`, `--version`: Display version information and exit.
+
+- **Using the RTI Command Line Tool:**
+  - Open a console window, navigate to `./bin`, then enter commands in format: `rti <command> [arguments]`.
+  - Available commands:
+    - `delete <componentHandle> <federationHandle> <federateHandle>`: Resigns a federate from rtiexec.
+    - `list [all | rtiexec | rtiForwarder]`: Lists components based on input parameter (default is all local RTI components).
+    - `kill <componentHandle>`: Resigns local federates and shuts down local rtiexecs and RTI Forwarders.
+    - `shutdownall`: Shuts down the local RTI Assistant and all connected local RTI components.
+
+- **Example:**
+  - List rtiexec connections: `rti list rtiexec`
+  - Delete a federate: `rti delete <componentHandle> <federationHandle> <federateHandle>`
+
+- **RTI List Command Output:**
+  - Lists locally connected RTI components by Assistant ID:
+    - RTI Executables (rtiexecs)
+    - Forwarders
+    - Local Runtime Components (LRCs)
+  - Example output shows connections for `fw270` and other LRCs like Logger, MAK PVD, VR-Link F18.
+
+- **RTI List rtiexec Command Output:**
+  - Displays information about local rticxec connections:
+    - Shows federates connected to a specific rtiexec (e.g., `fw270`).
+    - Lists respective LRCs for each federate.
+
+- **Deleting Federates using 'kill' command:**
+  - Deletes federates based on handle and/or federation execution name.
+  - Examples:
+    - `kill <handle> <federate_name>`: Deletes a specific federate (e.g., `kill 1 Logger`).
+    - `kill <handle>`: Deletes all federates with the specified handle (e.g., `kill 1`).
+
+- **Managing Federations:**
+  - MAK RTI provides GUIs for federation management:
+    - RTI Assistant
+    - RTIspy
+  - Key management tasks include:
+    - **Specifying the FED File:**
+      - The creating federate dictates the FED file name.
+      - Exchange options: Just the FED file name (efficient but may have consistency issues) or entire contents (ensures same FED file, introduces overhead).
+      - CRC check for FED file consistency.
+    - **Configuring Fault Tolerance Strategies:**
+      - Responding to abnormal termination
+      - Reconnecting to the RTI forwarder
+      - Specifying response interval
+      - Processing discovery of unknown objects
+      - Choosing silent failure instead of exceptions
+      - Configuring save/restore
+
+- **FED File Management:**
+  - **Default Search Order:** MAK RTI looks in the current working directory first, then the `RTI_CONFIG` environment variable.
+  - **Non-default FED File:** Use `RTI_defaultFedFile` parameter or `createFederationExecution` service to specify a different file.
+
+- **Lightweight Mode (Default):**
+  - No communication of FED file name among federates.
+  - Suitable for small, simple federations with best effort transport and no strict HLA compliance.
+  - Convenient for development and debugging due to quick restart capabilities without rtiexec.
+
+- **Full Compliance Mode (Enabled by specific parameters):**
+  - FED file distributed from the creating federate to all joining federates.
+  - Recommended during development to ensure consistent FOM usage, but can impact performance.
+
+- **HLA 1516 FDD File:**
+  - HLA DTD must be accessible as specified in the FDD DTD attribute.
+  - Local copy of the FED file required for any federate creating a federation.
+
+- **RTI Assistant Features (Lightweight Mode):**
+  - View notification history.
+  - Enable federate logging.
+  - Force a federate to resign.
+  - Run latency tests.
+  - Shut down all federates.
+
+- **Limitations of Lightweight Mode:**
+  - No central processing for:
+    - Reliable transport.
+    - Time management.
+    - Save and restore functionality.
+    - Synchronization points.
+  - Limited functionality for:
+    - Message Oriented Middleware (MOM).
+    - Data Distribution Management (DDM).
+    - Ownership management services.
+  - Released attributes are permanently orphaned upon federate resignation.
+  - No central storage for federation execution and federate information leads to:
+    - Potential successful returns from `createFederationExecution()`, `destroyFederationExecution()`, `joinFederationExecution()` even when incorrect.
+    - Federates choosing their own IDs, risking duplicates.
+  - RTI cannot detect crashed federates or automatically resign them.
+  - RTI does not pass the name of the FED file from the creating federate to others.
+  - Name reservation only checked locally (RTI 1516/HLA Evolved).
+  - No support for FOM module merging.
+
+- **Federations View Panels:**
+  - Network Map: Displays icons for RTI Forwarder, rtiexec, and federates in the selected connection.
+  - Selected Node: Details about the node selected in the Network Map.
+  - Federations: Information about federations.
+
+The RTI Assistant's Federations View helps manage and monitor active federations and their federates on a chosen connection.
+
+1. **Accessing Federations View:**
+   - Right-click the RTI Assistant icon in the system tray.
+   - Select "Federations View".
+   - Choose your desired connection from the "Current Connection" dropdown.
+   - Select a federation to view its details in the "Selected Node" panel.
+
+2. **Network Map:**
+   - Displays icons for forwarders, federates, and rtiexec node with reliable connections (TCP) between them.
+   - Clicking on a node shows its details in the "Selected Node" panel.
+   - Requires running rtiexec and internal message reliable.
+
+3. **Viewing Time Management State Information:**
+   - Enable time management to view federate states, including:
+     - Regulating/Constrained status
+     - Lower Bound Time Stamp (LBTS)
+     - Lookahead setting
+     - Current simulation time
+   - Customize columns to display desired time management information.
+   - Displaying this info may impact RTI performance.
+
+4. **Viewing Synchronization Points:**
+   - Right-click the RTI Assistant icon and select "Federations View".
+   - Choose a federation from the "Federations" panel.
+   - Select "Federation > Synchronization Points" or click the synchronization points button ().
+   - The Synchronization Points dialog box shows the status of the selected federation's synchronization points.
+
+- **Synchronization Points:**
+  - Displayed in the Federations View until reached.
+
+- **Federation-Wide Notification Messages:**
+  - RTI Assistant shows Fatal and Warn messages from local federates.
+  - Initial popup, then viewable in Local Component Notification History window.
+  - Icon prompt until history is viewed.
+  - Access notification history: Right-click icon > Local Notification History.
+
+- **Fault Tolerance Strategies:**
+  - Automatic removal of terminated federates and orphaned objects.
+  - Detection methods:
+    - Broken TCP connections between LRC and rtiexec (RTI Forwarder).
+    - Heartbeat messages from LRC to federation execution.
+  - Removal actions depend on RTI version and FDD file settings.
+  - Configurable heartbeat interval and timeout in RTI Preferences.
+  - Asynchronous IO thread doesn't generate heartbeats; federates must call services frequently.
+
+- **Editing RTI Settings:**
+  - Access the RTI Settings Page, which lists MAK-provided and user-created configurations.
+  - Select the desired settings configuration and click 'Edit' to open the RTI Settings Configuration dialog box.
+  - Navigate to the Fault Tolerance page.
+
+- **Configuring Fault Tolerance:**
+  - Enable Federate Heartbeat by checking the corresponding checkbox.
+  - Set values for Heartbeat Interval and Timeout Interval in their respective boxes.
+
+- **Handling Orphaned Objects:**
+  - MAK RTI's default behavior processes orphaned objects as if the federate resigned, either deleting them or releasing their attributes.
+  - The 'Automatically Delete Orphans' setting controls this behavior:
+    - Enabling it and owning the `privilegeToDelete` attribute deletes orphaned objects from the federation.
+    - Disabling it or not owning the attribute leaves federate's owned attributes unrecoverable as orphaned.
+  - To specify deletion of orphaned objects, use RTI Preferences > Fault Tolerance page.
+
+- **Reconnecting to the RTI Forwarder:**
+  - Enable reconnections by setting `RTI_reconnectEnabled` to 1.
+  - Specify values for `RTI_federateReconnectPause` and `RTI_rtiExecReconnectPause`.
+  - Ensure rtiexec re-establishes its connection before federates try to reconnect.
+  - A connection will be dropped if not re-established within `(2 x ReconnectPause) + response_interval`.
+
+- **Federate Reconnection:**
+  - Upon reconnection, federates typically resume operation without noticeable effects.
+  - If reconnection fails, the LRC signals an `RTIinternalError` exception.
+  - During the reconnection period, some reliable messages may be lost due to temporary disconnection.
+  - To enable and configure reconnections:
+    - Launch RTI Assistant (if not already running).
+    - Access RTI Preferences and select the desired settings configuration for editing.
+    - Navigate to the Fault Tolerance Page.
+    - Enable 'Enable Reconnections' and set a value in 'Federate Reconnect Pause'.
+
+- **Response Interval:**
+  - Regulates the time (in seconds) an LRC waits for `rtiexec`'s response during specific service calls.
+  - Default interval is 3.0 seconds.
+  - To adjust:
+    - Launch RTI Assistant (if not already running).
+    - Access RTI Preferences and select the desired settings configuration for editing.
+    - Navigate to the Processing Model page.
+    - Set 'Response Interval'.
+
+- **Processing Discovery of Unknown Objects:**
+  - By default, RTI doesn't process updates from unknown objects for discovery to enhance efficiency.
+  - The `RTI_processUnknownUpdatesForDiscovery` setting governs this behavior (default is off).
+  - Syntax: `(setqb RTI_processUnknownUpdatesForDiscovery mode)` where `mode` can be 0 (off) or 1 (on).
+
+1. **RTI Settings Interaction:**
+   - Disable `RTI_processUnknownUpdatesForDiscovery` when `RTI_internalMsgReliableWhenUsingRtiexec` is enabled, as it's unnecessary and may cause issues like rediscovering deleted objects.
+
+2. **Silent Failure Configuration:**
+   - Configure function calls to fail silently instead of throwing exceptions for non-activated services in MAK RTI:
+     - Open RTI Preferences.
+     - Select the RTI Settings Page.
+     - Choose your settings configuration and click Edit.
+     - Go to the Diagnostic Output page and check "Exception for Disable Service".
+
+3. **Save/Restore Configuration:**
+   - Configure save/restore timeout duration (default: 120 seconds):
+     - Open RTI Preferences.
+     - Select the RTI Settings Page.
+     - Choose your settings configuration and click Edit.
+     - Go to the Services page, enable/disable "Enable Save and Restore", and optionally change the timeout value or save/restore directory.
+
+4. **Federate Management:**
+   - This chapter explains how to view information about federates and configure them.
+
+- **Displaying Federate Information:**
+  - Tools: RTI Assistant's Federations View, RTIspy.
+  - Displayable information:
+    - Federate identification details.
+    - Object and interaction information.
+    - Configuration settings (RID file).
+    - FOM objects and interactions.
+    - Federate log file.
+  - Access: Select a node in the Network Map or a federate listing.
+
+- **Displaying FOM Object and Interaction Classes:**
+  - Tool: RTIspy.
+  - Viewable lists:
+    - Objects with their attributes.
+    - Interactions with their parameters.
+  - Prerequisite: Network Statistics Monitoring RTI setting must be enabled.
+
+- **Viewing LRC Diagnostic Messages:**
+  - Logging methods:
+    1. Enable in RTI settings file: Logs all messages from federate start to exit, viewable via text editor or RTI Assistant.
+       - Separate log files created for each federate on a PC.
+    2. Enable from RTI Assistant: Logs messages only after enabling, not saved unless explicitly saved; startup messages not captured.
+
+- **Enabling LRC Diagnostic Data Logging:**
+  - Not explicitly detailed in the provided text.
+
+- **Displaying the Federate Log:**
+  - Not explicitly detailed in the provided text.
+
+- **Configuring Federate Connections in the RTI Settings:**
+  - Not explicitly detailed in the provided text.
+
+- **Log File Management:**
+  - Multiple executables from the same directory share a log file unless 'Reuse Log File' is disabled.
+  - Logging process cannot be turned off once started, but notification level can be changed to reduce logged messages.
+  - Log files can only be viewed for local machine federates.
+
+- **LRC Diagnostic Data Logging:**
+  - 'Log File Name' RTI setting enables/disables LRC diagnostic data logging. It's disabled by default.
+  - To enable/disable logging, specify/leave blank the log file name in RTI Preferences > RTI Settings Page > Diagnostic Output page.
+
+- **Viewing Federate Logs:**
+  - The 'Federate Log' window displays messages based on notification level and allows pausing, saving, or clearing messages.
+  - To view a federate's message log: select the federate in 'Federations View', then choose 'Federate > Federate Log File'.
+
+- **Configuring Federate Connections:**
+  - By default, federates connect using RTI Assistant. Alternatively, configure connection settings in RTI settings:
+    - Set `RTI_useRtiExec` to 1 to connect to `rtiexec`, or set it to 0 for lightweight mode.
+    - Set `RTI_forceFullCompliance` to 1 for full compliance mode.
+    - Specify TCP and UDP ports, best effort address, RTI Forwarder address, and other parameters as needed.
+    - Set `RTI_configureConnectionWithRid` to 1 to force using specified values.
+
+- **Objective:** Monitor network elements and federates within a federation using MAK RTI.
+- **Primary Tools:**
+  - Latency tests to assess communication delays between federates.
+  - RTIspy, a network monitoring tool for inspecting statistics like object, interaction, message, service, and callback frequencies.
+- **Latency Testing:**
+  - Requires at least two federates in the federation.
+  - Automatically initiates tests from an originating federate to all others upon activation.
+  - Manually adjustable parameters: number of interactions per test, time between interactions, size of interaction messages.
+  - Results displayed in the Latency Test window with details about each federate.
+- **RTIspy Monitoring:**
+  - Enables tracking of federate statistics, including object, interaction, message, service, and callback statistics.
+  - Allows visualization of federate statistics for analysis.
+- **Applications:**
+  - Identify processing bottlenecks caused by callbacks.
+  - Determine causes of slow-downs under time management.
+  - Compare the costs and benefits of RTI features.
+
+To monitor and test latency between federates in RTI, follow these steps:
+
+1. **Enable Latency Testing:**
+   - Right-click the RTI Assistant icon in the system tray.
+   - Select 'Federations View'.
+   - Choose the desired connection and federation.
+   - Enable 'Federation Latency Testing'.
+
+2. **Run a Latency Test:**
+   - Repeat steps 1-3 to open Federations View.
+   - Ensure latency testing is enabled (step 4 in original text).
+   - Select the federate you want to test.
+   - Click 'Federate Run Latency Test'.
+   - The 'Latency Test' window opens, displaying results for best effort and reliable mode latency.
+
+3. **Interpret Results:**
+   - The table displays:
+     - Time in Transit: Total latency minus queue time.
+     - Time Waiting for Federates: Queue time (difference between time in transit and total latency).
+     - Total Latency: Round trip time from send to receive.
+   - Understand Time in Transit based on processing models:
+     - Synchronous: All federates tick the network simultaneously.
+     - Asynchronous: Federates tick the network independently.
+
+1. **Synchronous & Asynchronous Modes:**
+   - No internal RTI queue; transit time equals total latency time.
+
+2. **Asynchronous Mode Latency Testing:**
+   - RTI records message queue placement and removal times for separate transit and waiting time reporting.
+   - Improve federate tick rate if significant discrepancy between transit time and total latency.
+
+3. **Asynchronous Message Processing Mode:**
+   - RTI preprocesses messages, reducing federate processing workload.
+   - Compare with asynchronous mode to assess latency improvements from changing the processing model.
+
+4. **Latency Test Details (Figure 8-3):**
+   - Report receipt timestamp.
+   - Initiator and recipient federate names and processing models.
+   - Average tick() frequency for each federate.
+   - Average queued message time at each federate.
+
+5. **Manual & Continuous Latency Tests:**
+   - Manual tests: Run using the 'Run' button in the Latency Test window (Figure 8-4).
+   - Continuous tests: Run using the 'Run Test Continuously' icon, with no break between tests.
+
+6. **Configuring Latency Tests:**
+   - Configure parameters via RTI Preferences dialog box or directly in the Latency Test window.
+   - Dropped federates' last test results remain in the Latency Test window.
+
+The text discusses monitoring tools in MAK RTI for optimizing simulations:
+
+1. **Latency Test:**
+   - Configure test preferences: time between interactions, number of interactions, size of interaction payload.
+   - Measure and improve communication latency between federates.
+
+2. **RTIspy Network Monitoring Tool:**
+   - Records messages sent, API calls made in RTI.
+   - Identify bottlenecks, optimize simulations:
+     - Callbacks page: observe RTI Ambassador or Federate Ambassador calls affecting execution.
+     - Observe network data representing simulation objects and interactions.
+     - Log statistics to files for deeper analysis.
+
+3. **Enabling/Disabling Network Statistics Monitoring (RTIspy):**
+   - Default setting is enabled, but can be edited via RTI Assistant preferences:
+     1. Open RTI Assistant.
+     2. Right-click icon, choose RTI Preferences.
+     3. Select RTI Settings Page, edit desired settings configuration.
+     4. Go to RTI Assistant page, check/uncheck 'Network Statistics Monitoring'.
+
+4. **Displaying Object Statistics (RTIspy):**
+   - Lists objects sent and received by a federate for analysis:
+     1. Right-click RTI Assistant icon, choose Federations View.
+     2. Select a federate, click 'Federate RTIspy: Federate Statistics'.
+     3. Go to Objects tab, view and sort object statistics.
+
+These tools help users understand and optimize simulations' performance by providing insights into network communication, processing times, and data exchange between federates.
+
+To access and analyze various statistics using RTIspy for a selected federate in MAK's RTI system:
+
+1. **Interaction Statistics:**
+   - Access:
+     - Right-click the RTI Assistant icon in the system tray.
+     - Choose 'Federations View'.
+     - Select a federate from the Network Map or Federations list.
+     - Click 'RTIspy: Federate Statistics' or its button.
+     - Select the 'Interactions' tab.
+   - Features:
+     - Lists interactions sent and received by the federate.
+     - Columns are sortable for easier distinction of entries.
+
+2. **RTI Message Statistics:**
+   - Access: Same as above, then select the 'Messages' tab.
+   - Features:
+     - Lists RTI message types with send/receive counts and sizes.
+     - Provides summary statistics on messages sent, received, and their sizes.
+
+3. **RTI Services Statistics:**
+   - Access: Same as above, then select the 'Services' tab.
+   - Features:
+     - Displays calls made to the RTI Ambassador by the federate.
+     - Helps identify performance bottlenecks in applications using RTI and callbacks.
+
+4. **Callback Statistics:**
+   - Access: Same as above, then select the 'Callbacks' tab.
+   - Features:
+     - Lists callbacks made to the Federate Ambassador.
+
+5. **Graphing Federate Statistics:**
+   - Access: Available on any statistics tab (Interactions, Messages, Services, Callbacks).
+   - Features:
+     - Graphs statistics by item or rate for better visualization and analysis of data.
+     - Options include 'Graph by Item' (Figure 8-13) and 'Graph by Rate' (Figure 8-14).
+
+- **Accessing Federate Statistics in RTIspy:**
+  - Open RTIspy.
+  - Click "Federate Statistics" button or select "RTIspy: Federate Statistics".
+  - Select desired tab (e.g., Callbacks).
+  - Choose a row and column.
+  - Click "Graph" to visualize statistics over time.
+
+- **Using RTIspy Network Monitoring Tool for Troubleshooting:**
+  - **Finding Bottlenecks Caused by Processing Callbacks:**
+    - Right-click the RTI Assistant icon in the system tray, select "Federations View".
+    - Select a federate.
+    - Open its Statistics window and go to the 'Callbacks' tab.
+    - Sort 'Federate Ambassador Callbacks' list by 'Total Time'.
+    - Identify resource-consuming callbacks and consider optimizations or moving processing to a separate thread.
+
+  - **Identifying Cause of Slow-Downs Under Time Management:**
+    - In Federations View, select a federate with larger time steps (e.g., 10 seconds).
+    - Open its Statistics window, go to 'Callbacks' tab, and sort by 'Total Time'.
+    - If most time is spent processing `tick()` calls, the simulation may be blocked waiting for an RTI event.
+    - Observe federates with smaller time steps (e.g., 1 millisecond) advancing more frequently.
+
+- **Comparing Costs and Benefits of RTI Features:**
+  - Use RTIspy to evaluate the impact of different RTI features on performance.
+
+- **Advanced RTI Features (MOM, DDM) Trade-off:**
+  - Advanced features offer extensive functionality but may increase message passing and processing costs.
+  - Example: Using DDM requires additional messages even when simple DM calls are used.
+
+- **Examining Benefits of RTI Features:**
+  - Run `rtiexec` with a simple federate, first without DDM, then with DDM enabled.
+  - Use RTIspy to view federate statistics and observe additional messages passed due to DDM (e.g., `AssocPubRegMsgKind`).
+
+- **Managing Network Traffic:**
+  - Chapter covers configuring network traffic management, excluding detailed packet forwarding strategies.
+  - Topics include:
+    - Choosing transport type for FOM data and internal messages.
+    - Using correct IP address format.
+    - Packet bundling for reliable and best effort messages.
+    - Automatically locating RTI forwarder and `rtiexec`.
+    - Configuring sender-side filtering (Smart TCP Forwarding).
+    - Compressing RTI messages.
+    - Enabling support for large attributes and parameters.
+    - Configuring network buffer sizes.
+    - Controlling congestion for best effort sockets.
+    - Configuring processing model.
+    - Buffering automatic update requests.
+    - Filtering by multicast groups using declaration management.
+    - Assigning DM multicast groups to network interfaces.
+
+- **Choosing Best Effort or Reliable Transport:**
+  - RTI settings (`FOM Data Transport Type` and `Send Internal Messages Reliable (TCP)`) determine message transport type for FOM data and internal messages.
+  - Options:
+    - All Data Best Effort (UDP): All messages sent best effort.
+    - Send Internal Messages Reliable (TCP): Internal bookkeeping messages sent using reliable transport.
+    - Specified by FOM: Object attributes and interactions sent as specified in the FED file.
+    - All Data Reliable (TCP): All FOM data sent reliable, regardless of FED file setting.
+
+- **Transport Type Configuration:**
+  - FOM Data Transport Type:
+    - Options: 'Use FOM', 'Best Effort' (BE), or 'Reliable'.
+    - BE and reliable types can be used with TCP forwarding and UDP multicast.
+  - Send Internal Messages Reliable (TCP):
+    - Can be enabled (1) or disabled (0).
+
+- **IP Address Format:**
+  - MAK RTI supports IPv4 and IPv6, but they cannot be mixed within a federation.
+  - All IP addresses in the RID file and RTI Assistant must match the protocol used by the federation.
+
+- **Packet Bundling:**
+  - MAK RTI supports message bundling to reduce bandwidth usage and processor time.
+  - Enabling packet bundling:
+    - Open RTI Preferences.
+    - Select desired settings configuration.
+    - Go to the Bundling page.
+    - Check 'Enable Packet Bundling' and set 'Packet Bundling Size'.
+  - Bundles are flushed at the end of every tick().
+
+- **Automatic RTI Forwarder/rtiexec Discovery (Multicast Discovery):**
+  - Can be enabled (RTI_mcastDiscoveryEnabled = 1) to automatically locate an RTI Forwarder or rtiexec on the LAN.
+  - Federates send a beacon to a multicast group, and if an RTI Forwarder is running, it responds with the correct address.
+  - The federate will keep trying until reaching the limit specified by RTI_mcastDiscoveryTries. After that, it defaults to best effort only.
+
+- **Additional Information:**
+  - The recommended maximum bundle size for WAN traffic is 1492 bytes or the local network's MTU if running on a LAN.
+  - Bundles are flushed at the end of every tick(), even if not full.
+
+- **Multicast Discovery:** Ensures only one RTI Forwarder and one `rtiexec` run per LAN, useful when `rtiexec` runs on different hosts.
+
+- **Sender-Side Filtering (Smart TCP Forwarding):**
+  - Minimizes bandwidth by filtering attribute instances based on receiving federates' subscriptions, including DDM.
+  - Trade-off: Small increase in message size for potential significant bandwidth reduction if federates subscribe to a subset of attributes. Decreases performance if all data is subscribed.
+  - Incompatible with fixed grid DDM and supports only one federation at a time.
+
+- **Configuration:**
+  - Edit `Smart Forwarding Level` (No Smart Forwarding, Subscription Routing, or Routing + Server-Side Filtering) and `Max Number of Federates`.
+  - Defaults: No Smart Forwarding, Max Number of Federates = 511.
+  - Each update and interaction message has a bitmask appended based on the maximum number of federates allowed.
+
+- **Comparison with TCP Forwarding:** Without filtering, all federates receive all messages. With sender-side filtering, federates only receive updates based on their subscriptions, reducing unnecessary traffic.
+
+**Topics Covered:**
+- Sender-Side Filtering (Smart TCP Forwarding)
+- Message Routing for `rtiexec`
+- RTI Message Compression
+
+**Key Points:**
+
+1. **Sender-Side Filtering:**
+   - Access: RTI Assistant > RTI Preferences > RTI Settings Page > Edit settings configuration > Advanced Connection page.
+   - Options:
+     - Smart Forwarding Level: Controls the level of filtering applied to outgoing messages.
+     - Max Number of Federates: Limits the number of federates that can connect.
+
+2. **Message Routing for `rtiexec`:**
+   - By default, internal RTI messages are sent only to `rtiexec`, and FOM data only to federates.
+   - Enable/disable message filtering with the `RTI_enableFedexMsgRouting` parameter.
+
+3. **RTI Message Compression:**
+   - Separate compression for UDP (best effort) and TCP (reliable) connections.
+   - Configurable compression levels (1-9) for both UDP and TCP, with higher values resulting in more compression but potentially increased processing time.
+   - Access: RTI Assistant > RTI Preferences > RTI Settings Page > Edit settings configuration > Bundling page.
+
+**Steps to Configure:**
+- Launch the RTI Assistant from the Windows Start menu.
+- Right-click the RTI Assistant icon in the system tray and select "RTI Preferences".
+- Choose the RTI Settings Page, select a settings configuration to edit, and navigate to the relevant page (Advanced Connection or Bundling) to modify configurations.
+
+- **Large Attribute and Parameter Support:**
+  - Enabled by `RTI_use32BitsForValueSize` parameter.
+  - Allows sending messages with attributes/parameters larger than 64 KB (default is 64 KB).
+  - Requires TCP for transmission due to message size (> 64KB) and RTI's reliable connection support.
+  - Best effort connection supports only up to 64K packets, so enable this parameter cautiously.
+
+- **Network Buffer Sizes Configuration:**
+  - Adjust TCP and UDP network receive buffers, send buffer, and TCP buffer size when enabling large messages.
+  - Default values:
+    - Socket Receive Buffer Size: 2 MB
+    - Socket Send Buffer Size: 200 KB
+    - TCP Buffer Size: 500 KB
+  - Edit settings via RTI Assistant > RTI Preferences > RTI Settings Page.
+
+- **Controlling Congestion for Best Effort Sockets:**
+  - Enabled by `RTI_enableBestEffortSendRetry`.
+  - Configured using:
+    - `RTI_bestEffortSendRetries`: Number of send attempts before discarding the message.
+    - `RTI_bestEffortSendRetryWaitUsec`: Number of microseconds to wait after each send attempt for a blocked socket.
+  - Provides limited congestion control for best effort sockets.
+
+The text covers two main topics: configuring the Processing Model and managing Automatic Update Requests in MAK's Run-Time Infrastructure (RTI).
+
+1. **Processing Model:**
+   - The RTI offers four processing modes:
+     - *Synchronous*: Default for network I/O, processes reads/writes in a secondary thread.
+     - *Asynchronous I/O*: Improves performance with bursty network traffic.
+     - *Asynchronous Processing*: Processes messages asynchronously without invoking callbacks, enhancing response time and efficiency. Requires additional memory allocation and data copy operations.
+     - *Asynchronous Callbacks*: Performs federate callbacks asynchronously, offering potential performance benefits but increasing complexity due to thread-safety requirements.
+   - **Editing the Processing Model:**
+     - Open RTI Assistant > Preferences > RTI Settings > Edit desired configuration > Processing Model page.
+
+2. **Buffering Automatic Update Requests (HLA 1516 and Evolved):**
+   - Federates can instruct the RTI to temporarily buffer automatic update requests, reducing callback frequency.
+   - **Enabling buffering:**
+     - Enable 'Enable Message Throttling' setting and set 'Auto Provide Delay' for automatic requests. Optionally, enable 'All Provides Delayed' for all update requests.
+   - **Editing these settings:**
+     - Open RTI Assistant > Preferences > RTI Settings > Edit desired configuration > Message Throttling page.
+
+- **Filtering by Multicast Groups Using Declaration Management (DM):**
+  - Assign object and interaction classes to separate multicast groups for basic filtering.
+  - Use `RTI-addDMObjectMulticastAddr` and `RTI-addDMInteractionMulticastAddr` parameters in the RID file.
+  - Syntax: `(parameter "ClassName" "MulticastAddress" "NestingOperator" "interface")`
+    - `ClassName`: Fully qualified FOM class (e.g., "ObjectRoot.BaseEntity.Platform")
+    - `MulticastAddress`: Valid multicast address (IPv4 or IPv6)
+    - `NestingOperator`: "exclusive" or "inclusive"
+      - Determines if the assignment applies to a specific class only or includes derived classes.
+    - `interface`: Network interface specification
+  - Organize entries from base to leaf classes, with exclusive entries after inclusive ones.
+  - LRC behavior:
+    - Joins all specified multicast groups for subscribed classes and their derivatives.
+    - Transmits object attributes based on the instance's class, not where the attribute is defined.
+    - Transmits interactions based on the interaction class.
+
+- **Assigning DM Multicast Groups to Network Interfaces:**
+  - Segment RTI traffic onto multiple physical networks without modifying routing tables on multi-homed machines.
+  - Use the `interface` parameter in the respective parameters (e.g., `RTI-addDMObjectMulticastAddr` or `RTI-addDMInteractionMulticastAddr`) to specify a network interface.
+
+- **Notes:**
+  - Multicast address and network interface must be of the same address family (IPv4 or IPv6).
+  - This functionality is separate from any filtering performed by DDM services.
+  - Federate subscriptions trigger LRC to join multicast groups for subscribed classes and their derivatives.
+
+The text chunks detail configurations for message forwarding in MAK RTI across LAN and WAN using UDP and Centralized TCP. Here's a concise summary:
+
+1. **LAN Configurations:**
+   - **Best Effort (UDP) on LAN:**
+     - Set `RTI_fomDataTransportTypeControl` to 0 or 1, or `RTI_internalMsgReliableWhenUsingRtiexec` to 0.
+     - Optionally set:
+       - `RTI_udpPort`: Port number for best effort messages (default: 4000).
+       - `RTI_destAddrString`: IP address for federation traffic (default: multicast 229.7.7.7 or broadcast).
+   - **Centralized TCP Forwarding on LAN:**
+     - Enable reliable transport:
+       - Set `RTI_fomDataTransportTypeControl` to 0 or 2, or `RTI_internalMsgReliableWhenUsingRtiexec` to 1.
+     - Set:
+       - `RTI_tcpForwarderAddr`: IP address of the RTI Forwarder machine.
+       - `RTI_tcpPort`: Port for TCP connections (add line `setqb RTI_tcpPort port` in RID file).
+   - **Distributed Forwarding on LAN:**
+     - Configure using forwarder groups (page 10-6), singleton forwarders (page 10-7), and advanced settings (page 10-9).
+
+2. **WAN Configurations:**
+   - **UDP over WAN without Distributed Forwarding:** Configured on page 10-5.
+   - **Centralized TCP Forwarding on WAN:**
+     - Similar to LAN configuration, with additional router and firewall considerations (page 10-26).
+   - **Distributed Forwarding on WAN:**
+     - Topologies configured on page 10-10, optimized across WAN on page 10-11.
+     - Federates and RTI forwarders configured using the RTI Assistant (pages 10-14 to 10-16).
+   - **UDP Forwarding on WAN:**
+     - Configured with single-portal or load-balanced forwarder groups (pages 10-20 to 10-23).
+
+3. **Special Configurations:**
+   - Hierarchical forwarder networks configured on page 10-27.
+
+4. **General Notes:**
+   - MAK RTI supports IPv4 and IPv6, but not mixed usage.
+   - Federates must use the same transport protocol (UDP or TCP).
+
+- **Internal Messages and FOM Data with Reliable Transport:**
+  - Enable reliable transport for internal messages and FOM data using:
+    - `RTI_useRtiExec = 1`
+    - `RTI_internalMsgReliableWhenUsingRtiexec = 1`
+    - `RTI_fomDataTransportTypeControl = 0`
+  - Set the IP address of the machine running rtiexec in `RTI_tcpForwarderAddr` (e.g., "192.168.x.x").
+
+- **WAN Configuration:**
+  - Choose transport type: best effort or reliable over a WAN.
+  - Implement packet forwarding strategies to reduce bandwidth consumption:
+    - Centralized TCP forwarding
+    - Distributed TCP forwarding
+    - Distributed UDP forwarding
+  - Set `RTI_tcpBufferSize` to control the size of the TCP packet buffer (default: 500,000).
+
+- **Centralized TCP Forwarding on WAN:**
+  - Set `RTI_tcpForwarderAddr` to the RTI Forwarder's address.
+  - Note its simplicity but inefficiency due to all TCP messages passing through the central RTI Forwarder.
+
+- **Configuring Routers or Firewalls for WAN Federations:**
+  - Ensure the RTI Forwarder is accessible via the designated distributed forwarder port.
+  - For centralized TCP forwarding, configure one firewall (on the RTI Forwarder's LAN) to:
+    1. Accept incoming TCP packets on its IP address instead of the RTI Forwarder's machine IP.
+    2. Forward received TCP packets to the RTI Forwarder's machine.
+
+- **Additional Reading:**
+  - Refer to "Distributed Forwarding Topologies on a LAN" and following sections for distributed forwarding configuration.
+  - Consult network administrators for the best method to allow traffic through firewalls (e.g., NAT with port forwarding, DMZ, VPNs, static routing, or virtual LANs).
+
+- **UDP over WAN without Distributed Forwarding:**
+  - Send multiple copies of each message to remote RTI Forwarders via TCP.
+  - Set `RTI_distributedUdpForwarderMode` to 0 and use `RTI-addDestAddrString` to add destination addresses.
+  - Configure separate RID files for each LAN, adding unicast addresses for remote federates.
+  - Don't add local federates as destinations.
+
+- **Example:**
+  - LAN 1: 207.86.232.1, 207.86.232.2, 207.86.232.3
+  - LAN 2: 208.86.232.1, 208.86.232.2, 208.86.232.3
+  - Add remote LAN's federates to each other's RID files.
+
+- **Limitations:**
+  - This method doesn't work if multiple federates run on the same computer without multicast availability.
+  - Most routers do not forward multicast packets across a WAN, requiring unicast communication.
+
+- **Distributed Forwarding Topologies on a LAN:**
+  - Use multiple RTI Forwarders for large federations sending lots of reliable data to balance message distribution and prevent overload.
+
+- **Forwarder Groups (LAN):**
+  - Federates send messages only to their assigned primary forwarder.
+  - The primary forwarder relays messages to all other federates in the group.
+  - Federates receive messages from all forwarders in the group.
+  - Proper load dispersal is crucial when assigning federates to primary forwarders.
+
+- **Forwarder Groups:**
+  - Forwarders within a group communicate with each other and the `rtiexec`.
+  - Each forwarder serves multiple federates, acting as primary for some and ancillary for others.
+  - A message sent by a federate to its primary forwarder is relayed to all other federates in the group.
+  - In a LAN-only configuration, disable distributed UDP forwarding (set `RTI_distributedUdpForwarderMode` to 0) as multicast/broadcast are more efficient.
+
+- **Singleton Forwarders:**
+  - Federates connect to individual forwarders in a fully-connected network.
+  - Messages sent by a federate are relayed by its forwarder to others, which then send them to their connected federates.
+
+- **Comparison and Considerations:**
+  - Both topologies distribute traffic among multiple RTI Forwarders, reducing potential bottlenecks.
+  - Group forwarding can reduce latency by eliminating an extra hop compared to singleton networks.
+  - For large federations (e.g., 3000 federates), a singleton forwarder network might be advantageous due to reduced message retransmissions.
+
+- **Primary Forwarder (Single Network Interface):**
+  - Average latency: `(tmsg * (# of federates / 2))`
+  - Transmits message once over the LAN to all connected federates.
+
+- **Distributed Singleton Forwarder Network:**
+  - Primary forwarder relays message:
+    - 99 copies to other federates it's connected to.
+    - 29 copies to other RTI Forwarders.
+  - Potential simultaneous transmission by individual forwarders reduces latency to: `((tmsg * (# of forwarders / 2)) + (tmsg * (# of federates per forwarder / 2)))`
+  - Latency reduced by an order of magnitude due to fewer federates per forwarder.
+
+- **Large Single-LAN Federations:**
+  - Use multiple forwarder groups interconnected over the LAN for load balancing.
+  - RTI Forwarders in disparate groups handle message relay simultaneously within each group, further reducing latency.
+
+- **Distributed Forwarding on a WAN:**
+  - Individual, fully connected forwarders at each LAN handle both reliable (TCP) and best effort (UDP) messages.
+  - Each forwarder sends copies of the message to remote forwarders whose federation subsets contain interested federates.
+
+- **Optimizing Distributed Forwarding across a WAN:**
+  - Add more forwarders on each LAN to create one or more forwarder groups for optimization.
+
+- **Group Structure:**
+  - Each group consists of one or more RTI Forwarders.
+  - Groups can have different numbers of members; a forwarder belongs to only one group.
+  - Unassigned forwarders form singleton groups (single-member groups).
+
+- **Interconnection Options:**
+  - Two methods: Single-Portal and Load-Balanced.
+
+- **Single-Portal Interconnections:**
+  - One forwarder in each group serves as the 'portal' for incoming messages.
+  - All local forwarders connect to foreign group's portal forwarder.
+  - Portals relay messages between groups, handle internal message distribution, and connect to other portals but not non-portal forwarders directly.
+  - Groups, not individual forwarders, are fully connected.
+
+- **Load-Balanced Interconnections:**
+  - Multiple (ideally all) forwarders in each group act as portals for load distribution.
+  - Each local forwarder selects a different portal forwarder in foreign groups to send messages, distributing traffic among several forwarders and preventing bottlenecks.
+
+- **Federate Perspective:**
+  - In both configurations, federates send messages to their primary forwarder, which relays them within and between groups.
+
+- **Network Architecture:**
+  - Distributed, load-balanced Forwarder Network
+  - Groups: Bravo (3 members), Charlie (2 members), Delta (3 members), Alpha (3 members)
+  - Bidirectional connections between portals; ancillary forwarders connect to portal forwarders
+
+- **Forwarder Group Size Imbalance:**
+  - Smaller groups maintain multiple connections with larger foreign groups
+  - Ancillary connections evenly distributed among group members to prevent overload
+
+- **Configuring Federates for Distributed Forwarding (RID file):**
+  - Enable reliable transport
+  - Set primary forwarder (`RTI_tcpForwarderAddr`)
+  - If using forwarding groups, add each forwarder in the group (`RTI_addForwarderGroupAddrString`)
+  - Disable distributed UDP forwarding (`RTI_distributedUdpForwarderMode = 0`)
+
+- **Configuring RTI Forwarders for Distributed Forwarding:**
+  - Fully-connected networks: Configure via RTI Assistant
+  - Other topologies: Configure in `routes.mtl` file, copy to each forwarder computer
+  - Forwarder behavior depends on connection configuration and presence of `routes.mtl`
+
+- **Configuring RTI Forwarders Using the RTI Assistant:**
+  - Specify one forwarder's network address in Advanced Forwarder Options
+
+- **Dynamic Connection Sharing:** When adding RTI Forwarders, they automatically share their network addresses to establish connections.
+
+- **Configuring Distributed Forwarder Connections:**
+  - Click 'Advanced' in connection configuration.
+  - Optionally, specify a port for the RTI Forwarder.
+  - Select 'Specify Additional Forwarder Connection'.
+  - Enter the address of the RTI Forwarder to connect to.
+  - Click 'OK'.
+
+- **Creating a Routes File:**
+  - Specify each RTI Forwarder using `RTI_addForwarder` with format: `(RTI_addForwarder "Name" "IP address | hostname" Port)`.
+  - Use identical forwarder lists in each routes file for a fully-connected network.
+  - Avoid using hostnames due to potential issues like NAT traversal or VPN tunneling.
+
+- **Routes File Parameters:**
+  - `RTI_addForwarder`: Specifies an RTI Forwarder's IP address (or hostname).
+  - `RTI-enableCompression` and `RTI-enableBundling`: Enable compression and bundling for individual forwarder connections.
+  - `RTI_forwarderInterfaceAddr`: Specifies the host interface IP for initiating connections to other RTI Forwarders. Only necessary for multi-homed hosts.
+  - `RTI-allowMulticastForwarding`: Enables an RTI Forwarder to handle distributed UDP forwarding duties on its LAN. Required only when forwarder groups are used and `RTI_distributedUdpForwarderMode` is 2.
+  - `RTI_forwarderGroupInterconnectMethod`: Specifies the type of distributed forwarder network (single-portal, load-balance, manual).
+
+- **Network Configuration:**
+  - Single-portal and load-balanced networks are configured separately.
+    - Single-portal: Page 10-20
+    - Load-balanced: Page 10-22
+  - Manual configuration of forwarder networks is detailed on page 10-26.
+
+- **Forwarder Group Commands:**
+  - `RTI-addForwarderGroup`: Specifies the name of a Forwarder Group.
+  - `RTI-addForwarderToGroup`: Adds an RTI Forwarder to a specified Forwarder Group, with parameters:
+    - `GroupName` (name of the group)
+    - `ForwarderName` (name of the forwarder, identical to one in RTI_addForwarder entries)
+    - `URL` (currently not supported, leave as empty string)
+    - `acceptRemoteConnections` (1 for portal, 0 otherwise)
+
+- **Routes File Search Order:**
+  - 1. Loads 'routes.mtl' from the working directory.
+  - 2. Tries to load from the directory specified by the `RTI_CONFIG` environment variable.
+  - 3. Uses default settings if not found elsewhere. Custom file name can be set with `RTI_forwarderRoutesFile`.
+
+- **UDP Forwarding:**
+  - Requires `RTI-allowMulticastForwarding` parameter for each RTI Forwarder handling multicast traffic between LANs, with syntax:
+    ```
+    (RTI-allowMulticastForwarding "ForwarderName")
+    ```
+
+- **Single-Portal Forwarder Groups Configuration:**
+  - Set interconnection method using `RTI_forwarderGroupInterconnectMethod` with value `{single-portal | load-balance | manual}`.
+  - Create groups using `RTI-addForwarderGroup`.
+  - Populate groups with RTI Forwarders using `RTI-addForwarderToGroup`, ensuring forwarders are already specified in the forwarder list.
+  - If none is explicitly assigned as a portal, the first alphabetically acts as one.
+
+- **Example Configuration:**
+  - Four groups (Alpha, Bravo, Charlie, Delta) interconnected using the single-portal method. Each group has multiple forwarders added to it, with some designated as portals.
+
+- **Default Portal Selection:** Charlie_1 is the default portal due to its alphabetical position in its group.
+
+- **Load-Balanced Forwarder Groups:**
+  - Each forwarder in a group should be a portal for optimal load balancing.
+  - If some forwarders can't act as portals (e.g., behind firewalls), mark them as non-portals (`acceptRemoteConnections = 0`).
+  - Non-portal forwarders still connect to other groups' portals, ensuring balanced connections.
+
+- **Distributed Forwarding:**
+  - RTI Forwarder sends TCP and UDP messages across WAN.
+  - To enable distributed forwarding for UDP:
+    1. Set `RTI_distributedUdpForwarderMode` to 2.
+    2. Configure distributed forwarding as for TCP.
+    3. Allow a single forwarder on each LAN to monitor multicast traffic.
+
+- **Direct UDP Unicast to Remote RTI Forwarders:**
+  - Alternative method: Federates send messages directly to remote RTI Forwarders via UDP unicast.
+  - Set `RTI_distributedUdpForwarderMode` to 1.
+  - Each federate's RTI file lists local LAN multicast address and remote forwarder addresses.
+
+- **UDP Unicast Limitation**: RTI Forwarder must run on a dedicated host for assured reception of remote messages.
+- **Message Forwarding Configuration**:
+  - **LAN A Federate**: Sends messages to LANs B and C using broadcast/multicast for local processing, then adds RTI Forwarders' addresses as additional destinations.
+    - Example: `(setqb RTI_destAddrString "229.7.7.7") (RTI-addDestAddrString "208.86.232.1") (RTI-addDestAddrString "209.86.232.1")`
+  - **LAN B and C Federates**: Use multicast as the primary destination, adding LAN A federate and respective UDP Forwarder addresses.
+    - Example: `(setqb RTI_destAddrString "229.7.7.7") (RTI-addDestAddrString "207.86.232.1") (RTI-addDestAddrString "209.86.232.1")`
+- **Connecting to Remote Forwarders**:
+  - Use RTI Assistant's Federations View to connect forwarders from different systems.
+    - Steps: Right-click RTI Assistant icon > Federations View > Select connection > Forwarder > Connect to Forwarder > Choose connection > OK.
+- **Configuring Routers/Firewalls for WAN Federations**:
+  - When using distributed forwarding, configure `routes.mtl` with LAN firewalls' IP addresses and set firewalls to forward TCP packets on the RTI's distributed forwarder port to respective RTI Forwarders.
+
+- **Network Types:**
+  - **Fully Connected Networks:** Default networks where each forwarder or group connects to all others.
+  - **Hierarchical Forwarder Networks:** Manual configurations for complex layouts when full connectivity isn't feasible due to infrastructure or security concerns.
+
+- **Configuration Methods:**
+  - **Automatic Configuration (Default):** Used for fully connected networks. Connections are determined at runtime using single-portal or load-balanced interconnects.
+  - **Manual Configuration:** Required for hierarchical networks and complex layouts. Involves specifying every connection and message routing between individual forwarders in the `routes.mtl` file.
+
+- **Hierarchical Forwarder Networks Setup:**
+  - Set `RTI_forwarderGroupInterconnect-Method` to "manual".
+  - Connect adjacent forwarders using `RTI_addForwarderConnection (ForwarderName1 ForwarderName2)`.
+  - Route messages through forwarders with `RTI_addForwarderRoute (LinkNode Source NextHop)`.
+  - Uni-directional routes require separate entries for return paths.
+
+- **Complex Networks:** Large hierarchical networks can be intricate. Consider seeking MAK technical support for assistance.
+
+**Example (Figure 10-9):**
+- Forwarders A and B serve as link nodes between others.
+- Configure routes:
+  - C  A  B, D
+  - B  A  C, D
+  - D  A  C, B
+  - E, F  B (and reverses)
+
+- **Forwarder Network Routing:**
+  - No explicit entry needed for path from C to E due to existing routes (C through A to B and A through B to E).
+  - Leaf nodes (C, D, E, F) aren't link nodes; no routes go through them.
+  - Required entries in the routes file are listed.
+
+- **HLA Services Configuration:**
+  - MOM, time management, and DDM services are disabled by default for performance optimization.
+  - Full HLA compliance can be enabled by setting `RTI_forceFullCompliance` to 1.
+  - Individual services (MOM, Time Management) can be enabled/disabled independently.
+
+- **Enabling/Disabling MOM Services:**
+  - Access RTI Assistant preferences and select the 'Services' page.
+  - Check 'Enable MOM' to enable MOM services.
+  - To generate and log MOM exceptions, access the 'HLA' page in RTI Settings Configuration.
+
+1. **Enabling/Disabling HLA Services:**
+   - Select 'Override FOM Switches' and 'Exception Reporting'.
+   - Navigate to the 'Services' page, select 'Enable MOM' and 'Enable Exception Logging', then click 'OK'.
+
+2. **Setting MOM Federate Update Interval:**
+   - Open RTI Preferences and go to the 'RTI Settings Page'.
+   - Select a settings configuration, click 'Edit'.
+   - In the opened dialog box, navigate to the 'Services' page, select 'Enable MOM', choose a value in the 'MOM Federate Update Interval' field, then click 'OK'.
+
+3. **Enabling MOM Service Reports:**
+   - Open RTI Preferences and go to the 'RTI Settings Page'.
+   - Select a settings configuration, click 'Edit'.
+   - In the opened dialog box, navigate to the 'HLA' page, select 'Override FOM Switches' and 'Service Reporting', then click 'OK'.
+
+4. **Enabling Time Management Services:**
+   - Open RTI Preferences and go to the 'RTI Settings Page'.
+   - Select a settings configuration, click 'Edit'.
+   - In the opened dialog box, navigate to the 'Services' page, select 'Enable Time Management', then click 'OK'.
+
+5. **Configuring Internal Messages:**
+   - The RTI optimizes internal network traffic by regulating messages exchanged between its components, adhering to HLA Interface Specification with some relaxation for improved performance.
+
+The RTI (Run-Time Infrastructure) offers configuration options to regulate internal message traffic:
+
+1. **Delay Time for Processing Internal Messages:**
+   - Enable 'Message Throttling' to delay request processing.
+   - Set 'Transmit Delay' (in seconds) to control the delay before processing requests.
+   - This helps consolidate duplicate responses and handle multiple requests simultaneously, reducing redundant messages during federation startup.
+
+2. **Transmitting Internal Messages Across Ticks:**
+   - Enable 'Message Throttling' to set a transmission rate for internal messages per second across multiple ticks.
+   - The default setting (0.0) sends all messages in a single tick, which can cause message bandwidth spikes.
+   - Throttling the LRC (Library Runtime Component) to retransmit messages at a specified rate across subsequent ticks smooths out these spikes.
+
+**Configuration Steps:**
+- Launch RTI Assistant from the Windows Start menu if it's not running.
+- Right-click the RTI Assistant icon in the system tray and select 'RTI Preferences'.
+- Open the RTI Settings Configuration dialog box by selecting the desired settings configuration and clicking 'Edit'.
+- Navigate to the 'Message Throttling' page.
+- Enable 'Enable Message Throttling', set 'Transmit Delay' or 'Transmit Rate', then click 'OK'.
+
+- **Enabling and Configuring Message Throttling:**
+  - Open RTI Assistant from Windows Start menu.
+  - Right-click RTI Assistant icon in system tray, select "RTI Preferences".
+  - Go to "RTI Settings Page", choose a settings configuration, click "Edit".
+  - Select "Message Throttling" page:
+    - Check "Enable Message Throttling".
+    - Set desired value in the "Transmit Rate" box.
+    - Click "OK".
+
+- **Configuring Data Distribution Management (DDM) Services:**
+  - Enable DDM by following similar steps as message throttling, but select "Services" page and check "Enable Data Distribution Management".
+  - MAK RTI supports three DDM approaches:
+    - **Distributed Region DDM:** Define pools of multicast addresses for optimal filtering.
+      - Set `RTI_minChannelAddr` and `RTI_maxChannelAddr` parameters to define a pool of multicast addresses.
+      - Use `RTI_addressDelay` parameter to temporarily bypass the use of an updated region's multicast address.
+    - **Fixed Grid DDM:** Detailed configuration process in the manual.
+    - **Implicit DDM:** Detailed configuration process in the manual.
+
+- **Key Points:**
+  - Message throttling and DDM services can be enabled and configured using RTI Assistant.
+  - Each DDM approach has specific configuration parameters and processes.
+
+During a delay, region changes can propagate to subscribing federates, allowing those forming new overlaps to receive messages.
+
+**Fixed Grid DDM Configuration:**
+- Enabled via `RTI_ddmFixedGrid` in `rid.mtl`.
+- Requires a grid specification file (enabled with `RTI_ddmFixedGridFilename`) that defines:
+  - Routing space containing all used dimensions.
+  - Subspace axis partitioning, determining the number of application spaces.
+  - Remaining dimensions' partitioning and association with FOM dimensions.
+- Supports IPv4 or IPv6, but not mixed protocols.
+- Syntax: `;;with subspace;;` or `;;without subspace;;`, followed by dimension details.
+
+**Example Fixed Grid Specification:**
+```
+(RS1
+(SubspacePartition subspace 6 (one two) 1
+(
+...
+)
+)
+)
+```
+
+**Fixed Grid Search Order:**
+1. Load grid file specified in RTI settings.
+2. Load `RTI_CONFIG/grid_file_name_from_settings_file`.
+3. If not found, throw an exception.
+
+**Implicit DDM Configuration:**
+- Explained in the Implicit DDM section (page 12-18).
+- Can be configured using the Implicit DDM plug-in.
+
+The MAK RTI User Guide discusses Data Distribution Management (DDM) configuration options and the distributed region approach:
+
+1. **Configuration Options:**
+   - **Bounds:** Set upper and lower limits for dimensions.
+   - **Update Region Size & Margin:** Define how frequently objects update their locations and a safety margin around them.
+   - **Sensor Range:** Determine the size of subscription regions (object sensing).
+   - **Weapon Range:** Define interaction region sizes.
+
+2. **Configuration File:**
+   - Uses MAK Technologies Lisp (MTL) format.
+   - Specify file name via `RTI_implicitDdmParamsFile` setting: `(setq RTI_implicitDdmParamsFile "fileName")`.
+
+3. **Implicit DDM Parameters (Table 12-1):**
+   - `RTI_implicitDdmDefaultUpdateRange`: Maximum distance for object location updates.
+   - `RTI_implicitDdmDefaultSensorRange`: Maximum sensing distance.
+   - `RTI_implicitDdmMinExtentLimit`, `RTI_implicitDdmMaxExtentLimit`: Range for normalizing location values.
+   - `RTI_implicitDdmRegionMargin`: Factor to increase update region range.
+   - `RTI-implicitDdmOriginLat` & `RTI-implicitDdmOriginLong`: Relative center location for normalization.
+
+4. **Example Configuration:**
+   - Default update and sensor ranges set to 0.0 and 2000.0 meters, respectively.
+   - Specific object classes have custom update, sensor, and weapon ranges set using functions like `RTI-setObjectUpdateRange`, `RTI-setObjectSensorRange`, and `RTI-setObjectWeaponRange`.
+
+5. **Distributed Region Approach:**
+   - Each federate's LRC exchanges region information with remote LRCs.
+   - Update regions (for sending updates/interactions) and subscription regions (for DDM subscriptions) are matched by individual LRCs.
+   - Communication channels are established between publishers and subscribers based on these matches.
+   - MAK RTI uses best-effort multicast groups for communication, mapping update regions to these groups.
+
+- **Multicast Data Distribution:**
+  - Data sent once to a multicast address, received only by subscribers in that group.
+  - Each update region has its own multicast address; subscription regions join overlapping groups.
+  - Multicast filtering is efficient receive-side filtering, reducing processing at the RTI layer but not bandwidth.
+
+- **Multicast Limitations and MAK RTI Handling:**
+  - Limited effective multicast groups may result in irrelevant messages. MAK RTI uses:
+    - Channel identifier filter: Only processes messages with channel identifiers from matching update regions.
+    - Region matching information for reliable transmissions: Prevents updates from being sent if no matching subscriptions are found on the sending side.
+
+- **Distributed Region Matching:**
+  - Advantages:
+    - Perfect filtering: Relevant data only to receiving federates.
+    - Single channel transmission: Updates sent only to a single channel.
+  - Disadvantages:
+    - Overhead of distributing region information and performing matching.
+    - Poor scalability with many regions. Federates should limit the number of regions and update frequency.
+
+- **Attribute Passelization (MAK RTI):**
+  - When updating attributes, the LRC separates them into designated region set channels based on previous associations.
+  - Multiple messages may be transmitted for a single update if attributes belong to different regions.
+  - Region sets are shared across object classes but created separately for interaction classes.
+
+- **Use Separate Regions for Different Object Classes:**
+  - Maintain effective filtering by using separate regions for different object classes.
+  - Avoid transmitting attributes from these objects using the same channel to preserve filtering efficiency.
+
+- **Fixed Grid Approach to Data Distribution Management (DDM):**
+  - RTI uses a fixed grid approach for DDM, approximating routing without exchanging region information between LRCs.
+  - Key aspects:
+    - Predefined grid of multicast addresses, each associated with a FOM dimension.
+    - For subscription regions: LRC joins multicast addresses in overlapped grid cells.
+    - For update regions: messages sent using multicast addresses in overlapped grid cells.
+
+- **Non-compliance and Restrictions:**
+  - Fixed grid approach is not fully compliant with HLA 1.3 or HLA 1516, relaxing some requirements and imposing restrictions.
+  - Based on application space partitioning concepts from Coffin et al. (1999) and Helfinstine et al. (2001).
+
+- **API Compatibility:**
+  - Same fixed grid approach used for both HLA 1.3 and 1516 APIs, enabling interoperability between federates using different APIs.
+
+- **Fixed Grid Representation:**
+  - Defined by 'n' axes forming grid cells, with one axis potentially serving as a subspace axis for creating application spaces.
+  - Each cell assigned a multicast address sequentially through depth-first recursion.
+
+- **Fixed Grid Partitioning & Multicast Address Assignment:**
+  - Similar to subspace axis assignment.
+  - Each subspace results in a distribution of addresses for remaining dimensions based on subspace partitioning.
+  - Illustrated with a table showing six application spaces, each with increasing partitions (1, 2, 4, ..., 32).
+  - Each partition is assigned a unique multicast address from the range 224.0.0.1 to 224.0.0.63.
+
+- **Federate Region Intersections with Fixed Grid:**
+  - Maps each dimension range onto fixed grid axes.
+  - Results in beginning and ending indices for overlapped grid cells containing multicast addresses.
+  - Each axis has a lower bound of 0; upper bound is max unsigned long (4,294,967,295) for HLA 1.3 or FOM-defined for HLA 1516.
+  - Grid cell width = Axis upper bound / Number of partitions.
+  - Index calculation: I = floor(V / W), where V is the range bound value and W is the grid cell width.
+
+- **Example Configuration:**
+  - Upper bound of 400 for all dimensions, with six subspace partitions (one, two, four, eight, sixteen, thirty-two).
+  - Grid cell boundaries illustrated in Table 12-3.
+  - Federate region lower/upper bounds map to beginning/ending indices using the index formula. Subspace dimension is mapped first, assuming a point range.
+
+**Additional Key Points:**
+
+- **Subspace Partitioning:** The number of partitions doubles with each subsequent subspace (e.g., 1, 2, 4, 8, 16, 32).
+- **Multicast Address Range:** The assigned multicast addresses are within the range reserved for IPv4 multicast groups (224.0.0.0 to 239.255.255.255).
+- **Federate Region Mapping:** After mapping the subspace dimension, other dimensions' indices depend on the specified subspace index.
+- **Index Calculation for Last Partition:** For the last partition, the maximum upper bound maps down into the maximum index (e.g., 400 results in an index of 5, not 6).
+
+- **Subspace Indexing:**
+  - For subspace 0, all values map to index 0.
+  - For subspace 1:
+    - Values 0-199 map to index 0.
+    - Values 200-400 map to index 1.
+  - Other subspaces follow a similar pattern with increasing value ranges and indices.
+  - Table provided shows grid cell partition boundaries for subspaces 0 to 6.
+
+- **Data Normalization:**
+  - Federate data must be mapped/normalized into region range bounds using either enumerated or linear mapping.
+  - Enumerated Mapping:
+    - Scale dimension extent by the number of enumerations.
+    - Move range bound to the center of the partition.
+    - Truncate final value to the nearest integer.
+  - Linear Mapping:
+    - Scale dimension extent by the linear bounds.
+    - No adjustment to move range bound to the center of the partition.
+    - Truncate final value to the nearest integer.
+
+- **Fixed Grid Approach & DDM Services:**
+  - Not fully compliant with HLA specifications; relaxes some requirements and imposes restrictions.
+  - Create Region service:
+    - Fixed grid region initialized with exact dimensions configured for the fixed grid.
+    - Ignores additional dimensions, even if they belong to the same routing space (in HLA 1.3).
+    - Automatically adds unspecified dimensions from the fixed set when creating the region.
+
+- **Default Range Bounds:**
+  - HLA 1.3: 0 to 4,294,967,295
+  - HLA 1516: Set by FOM (default 0 to 1 if omitted or excluded)
+
+- **Region Modifications:**
+  - Unset range bounds assume default range dimensions.
+  - In HLA 1516, fixed grid dimensions cannot be excluded; excluded dimensions take on default range bound values of 0 to 1.
+
+- **Object Instance Management:**
+  - An object instance's attribute instances must use one and only one region.
+  - Registering/Associating an object with a region affects all its attributes.
+  - Unassociating any attribute instance unassociates all from the region.
+
+- **Data Distribution Management (DDM):**
+  - Multiple regions can be used for subscriptions, but they're additive across all regions.
+  - Unsubscribing attributes or interactions from a region also unsubscribes them from declaration management.
+  - Sending interactions or updating attributes with regions supports only point regions; RTI uses the lower bound.
+
+- **HLA Versions:**
+  - HLA 1.3 ignores additional extents after the first in a region.
+  - HLA 1516 has one extent per region.
+  - The fixed grid approach disables all advisories.
+
+**Additional Points:**
+
+- **Region Deletion:** A region in use cannot be deleted.
+- **Object Registration/Association:** Registering or associating an object with a region for any attribute results in all attributes being associated with that region. Subsequent associations must be with the same region and are redundant.
+- **Interaction Subscription/Unsubscription:** Unsubscribing an interaction class from regions also unsubscribes it from declaration management, and further, a declaration management unsubscription prevents the interaction from being received.
+- **Attribute Value Update:** When sending attribute updates associated with regions, only point regions are supported, and the RTI uses the lower bound.
+
+- **No Subscription/Publication Exchange:** No subscription or publication information is exchanged between federate LRCs.
+
+- **Implicit DDM (Data Distribution Management):**
+  - Provides DDM filtering advantages without using DDM services.
+  - Uses a MAK RTI plug-in that replaces non-DDM method calls with DDM ones, creating regions and modifying extents based on geographic data as specified by the RPR FOM.
+  - Offers range-based filtering:
+    - **Update Range:** Distance an entity can move in one update interval.
+    - **Sensor Range:** Range in which an entity can sense other vehicles.
+    - **Weapon Range:** Range in which an entity can engage another entity.
+  - Entities are within range if their update or weapon range overlaps the sensor range of federate's entities.
+  - Compatible with MAK RTI's distributed region and fixed grid approaches.
+
+- **Implicit DDM Implementation:**
+  - Uses RTIspy API, changes object registration, publication, subscription, and updates.
+  - Intercepts and decodes attribute value updates and interactions.
+  - Compatible with HLA RPR FOM 1.0 and 2.0 Draft 17 or their derivatives.
+
+- **Adding Implicit DDM to the FED/FDD:**
+  - During federation join, creates a routing space (ImplicitDdmSpace) with geocentric coordinates dimensions (HLA_X, HLA_Y, HLA_Z).
+  - Automatically adds this space to the RTI's internal FED/FDD and associates it with BaseEntity attributes and Weapon-Fire/MunitionDetonation interactions.
+  - Should not be declared in the actual FED file.
+
+- **Implicit DDM Plug-in (MAK RTI 1516):**
+  - Adds implicit DDM dimensions to MAK RTI's global routing space.
+  - Most work is done above the RTI Ambassador, with minimal changes to other classes like FOM Manager. Federate Ambassador remains unchanged.
+
+- **Implicit DDM Dimensions:**
+  - Default origin: Geocentric (0,0,0). Can be changed via config file using latitude and longitude.
+  - Default limits: -12,000,000m to 12,000,000m along each dimension, subtending a cube roughly twice Earth's diameter.
+  - Normalized values range from 1 to MAX_INT-1 (2 to MAX_INT-2 in 1516).
+
+- **Initialization Regions:**
+  - Until the first location attribute is decoded, object instances are assigned initial bounds at inaccessible points ({0,0,0} or {MAX_INT,MAX_INT,MAX_INT}) to prevent unwanted region overlaps.
+
+- **Implicitly Associating DDM Regions:**
+  - Plug-in tracks BaseEntity object instances and creates:
+    - Update regions (update range) for each instance.
+    - Interaction regions (weapon range) for each instance.
+    - A single subscription region (sensor range) used by all objects, with an added subscription extent for each registered object.
+  - Intercepts attribute updates and interactions, extracts location info, modifies region extents, and makes necessary DDM calls.
+
+- **Modifying Region Extents:**
+  - Method depends on the RTI's DDM approach. HLA 1516 APIs don't support multi-extent subscription regions, so plug-in creates and modifies an arbitrary number of extents within each object's subscription region.
+  - Normal underlying DDM processing uses implicit DDM region information as if federates made the DDM calls directly.
+
+- **Additional Points:**
+  - The plug-in intercepts attribute updates and interactions to extract location information before allowing further processing.
+  - If necessary, the plug-in substitutes a DDM call for normal DM calls (e.g., send-InteractionWithRegion).
+  - No additional changes are needed as the underlying DDM processing uses implicit DDM region information directly.
+
+- **Implicit DDM Plug-in Bypass:** In specific scenarios, the range-based Implicit DDM plug-in directly accesses underlying classes instead of using HLA 1516 API calls.
+
+- **Region Updates:**
+  - Three regions (update, weapon, subscription) are maintained for each federate object.
+    - Each object has an update region and a weapon region. A single subscription region is maintained for the federate but has an extent for each registered object.
+  - Regions' extents are checked and updated whenever the corresponding object's location changes.
+  - Implicit DDM uses ranges and margins to minimize actual changes in distributed regions.
+
+- **Region Ranges:**
+  - **Update Range:** Reflects the furthest distance an object could move during a single update interval. It assumes instantaneous direction changes, including 180-degree reversals.
+    - The region has a single extent which surrounds the object. The range of the extent can be configured based on the class used to register the object instance.
+  - **Weapon/Interaction Range:** Extends the update range, reflecting the range at which an object can interact with others (e.g., sending a weapon fire or detonation interaction).
+  - **Subscription/Sensor Range:** Also extends the update range, indicating the furthest range at which an object can detect another object.
+
+- **Configurable Ranges:** The Implicit DDM plug-in allows configuring all range values on a class-by-class basis to tailor region sizes to object types (vehicle, aircraft, surface vessel, etc.).
+
+- **Region Modifications:**
+  - When any BaseEntity-class object performs an attribute value update, the plug-in decodes the WorldLocation attribute if included in the update and compares it against the three regions' extents, updating any of them if necessary.
+    - The region modifications are initiated before the attribute value updates are processed further. Aside from initiating the region modifications, the plug-in does no further special processing on the attribute value updates.
+  - To minimize the number of region modifications that must be performed, the plug-in can expand the boundaries of the regions by a factor that you can configure.
+
+- **Interaction Processing:**
+  - When a federate sends an interaction using `sendInteraction()`, the plug-in decodes the `FiringObjectIdentifier` parameter and looks in a map of object instance names to determine if the interaction was sent by a BaseEntity object which has an interaction region associated with it.
+    - If an interaction region can be associated with the interaction, the plug-in simply substitutes the `sendInteractionWithRegion()` call to the RTI for further processing.
+
+- **Fixed Grid DDM:**
+  - When fixed grid DDM is enabled, the update and interaction regions become point regions rather than volumes.
+
+- **Region Handling:**
+  - **Update Region:** Extent set to single point (object's location), unaffected by range.
+  - **Interaction Region:** Based on interaction location, not object's location.
+  - **Subscription Region:** Volume determined by sensor range, overlaps update or weapon range.
+
+- **Fixed Grid DDM:**
+  - No region modification messages exchanged, saving bandwidth.
+  - Smart forwarding incompatible; all updates and interactions transit the network.
+
+- **Reliable Internal Messaging Recommendation:**
+  - Enable `RTI_dualTransmitFirstInteractionRegions` to prevent race conditions between region modification messages and interaction message.
+
+- **MAK RTI Shared Memory Communication:**
+  - Allows co-located federates and rtiexec process communication using shared memory message queue.
+  - Configure with parameters:
+    - `RTI_sharedMemoryMode`: Enables/disables use of shared memory.
+    - `RTI_sharedMemoryName`: Specifies a name for the shared memory region.
+    - `RTI_sharedMemoryQueueLength`: Specifies the length of the shared memory queue.
+    - `RTI_sharedMemoryMgrMaxWait`: Specifies how long the shared memory manager waits for incoming messages before it polls the network.
+
+- **Shared Memory Requirements:**
+  - All co-located federates or `rtiexec` in a federation using shared memory must set identical RTI settings.
+  - HLA Evolved does not support the use of shared memory.
+
+- **Federation Assumptions & Configurations:**
+  - By default, all co-located federates are assumed to belong to the same federation.
+  - Multiple distinct federations can either share a single message queue or have their own distinct queues on shared memory.
+
+- **Enabling Shared Memory Mode:**
+  - Edit the `RTI_sharedMemoryMode` parameter:
+    - Set to `0`: Disable shared memory, use default TCP/UDP sockets.
+    - Set to `1`: Enable shared memory communication only (all components co-located).
+    - Set to `2`: Enable shared memory with network relay for remote RTI components.
+
+- **Shared Memory Queue Manager:**
+  - A Shared Memory Queue Manager process is required when using shared memory.
+  - It creates and manages the shared memory region, sets up and controls the message queue within it, and relays messages between shared memory and the network.
+
+- **Specifying Shared Memory Details:**
+  - Set a unique name (maximum 32 characters, no spaces) for the shared memory region using `RTI_sharedMemoryName`.
+  - Set the shared memory queue length using `RTI_sharedMemoryQueueLength`.
+
+- **Security & Best Practices:**
+  - Ensure the user process has sufficient privileges to create the shared memory file in the appropriate location.
+  - Create a separate shared memory region for each federation when running multiple federations on the same machine, unless a single `rtiexec` is used by all federations.
+
+- **Shared Memory Queue:**
+  - Uses a circular queue structure with 'buckets' for message storage.
+    - Each bucket consists of a 20-byte header and a 200-byte payload.
+    - Messages larger than 200 bytes are automatically fragmented and reassembled.
+  - Windows: No fixed maximum size, limited by OS allocation at creation time.
+  - UNIX: Maximum size governed by the SHMMAX kernel parameter (typically 32MB for 32-bit Linux).
+
+- **Shared Memory Manager:**
+  - Controls how long the Shared Memory Queue Manager waits for messages before polling the network interface.
+    - Edit `RTI_sharedMemoryMgrMaxWait` parameter to set the wait interval.
+    - Only effective in shared memory mode 2.
+
+- **Message Queue Limits:**
+  - Maximum concurrent attachments: 16,384 (including the Shared Memory Queue Manager and rtiexec process).
+
+- **Starting the Shared Memory Manager:**
+  - A separate process is required to create and initialize the shared memory region.
+    - By default, it's automatically started by `rtiexec` or federates' LRC. Can also be manually started from `./bin`.
+      - Use `rtiShmQMgr` for HLA 1.3 or `rtiShmQMgr1516` for later versions.
+    - Must have access to a RID file with the same parameters used by `rtiexec` or federates.
+    - Each distinct shared memory region requires its own manager process.
+    - Doesn't support connection configuration; must listen to the port and address used by the federation execution.
+
+- **Command Line Syntax:** `rtiShmQMgr [options]`
+- **Key Command Line Options:**
+  - `-A, --destAddrString`: Override IP address for best-effort traffic.
+  - `-D, --Daemon`: Run in background (Linux only).
+  - `-h, --help`: Display syntax help.
+  - `-k, --ruthless`: Force takeover of shared memory queue, may cause unexpected behavior among other processes.
+  - `-K, --AutoExit`: Exit after last subscriber disconnects.
+  - `-l, --setLogFileName`: Enable logging to specified file.
+  - `-n, --notifyLevel`: Override notification level (0-Fatal, 1-Warn(default), 2-Notify, 3-Verbose, 4-Debug).
+  - `-P, --setUdpPort`: Override UDP port for message exchange.
+  - `-q, --setNotifyQuiet`: Set notification level to Fatal (0).
+  - `-R, --setRidFileName`: Specify RID file name.
+  - `-t, --graceful`: Attempt graceful takeover of shared memory queue, may cause unexpected behavior.
+  - `-T, --setTcpPort`: Override TCP port for message exchange.
+  - `-v, --version`: Display version information and exit.
+  - `--, --ignore_rest`: Ignore remaining command-line options.
+
+- **Shared Memory Manager Behavior:**
+  - Automatically shuts down when all processes detach, with a 30-second delay.
+  - May continue operating if an abnormally terminating federate doesn't successfully detach.
+  - Manual shutdown may be required in case of crashed federates not detaching.
+
+- **Manual Shared Memory Manager Shutdown:**
+  - Enter `q` to initiate shutdown.
+  - If federates are still attached, a warning prompt appears and the manager enters a pending state.
+  - Enter `q` again to override the warning and continue shutdown, risking unexpected behavior for attached federates.
+
+- **Abnormal Termination of Shared Memory Manager:**
+  - Abnormal termination can affect all federates using shared memory.
+  - Stop co-located federates and rtiexec if applicable.
+  - Deallocate shared memory manually or launch a new manager with `-t` option (e.g., `rtiShmQMgr t`).
+
+- **Tuning Shared Memory:**
+  - Calculate queue length based on available memory, number of federates, message generation rate, and processing speed.
+  - More memory allows for larger queues to support more federates.
+  - Message buffering in main memory prevents fast producers from blocking when the shared memory queue is full.
+
+- **Taking Over an Existing Shared Memory Region:**
+  - Initializing internal structures can cause unexpected behavior if federates are already attached.
+
+- **Buffering Impact:** Buffering message queues can degrade performance and consume all main memory if not managed effectively.
+
+- **Calculate Queue Parameters:**
+  - `Capacity = (average_updates_per_second_per_federate * number_of_federates) / slowest_tick_rate`
+  - `Queue Length = Capacity * ceil(average_msg_length / bucket_payload_size)`
+  - Example: 1000 federates, avg. update rate of 10 updates/sec, slowest tick rate of 20 ticks/sec, avg. msg length of 240 bytes, bucket payload size of 200 bytes  Queue Length = 1,000 buckets (approx. 220 KB RAM)
+
+- **Message Rate vs. Tick Rate Disparity:** A significant difference between message generation rate and the slowest federate's tick rate can lead to a serious bottleneck.
+
+- **Handling Unresponsive Federates:**
+  - The shared memory subsystem detects and unsubscribes unresponsive federates (inactive for 1 second) from the queue.
+  - Unsubscribed federates encounter an exception upon attempting to access the message queue again.
+
+- **Shared Memory Tuning:**
+  - Set `RTI_singleCallbackPerTick` to 0 when using shared memory to process all unread messages in one tick.
+  - Ensure each federate process receives its fair share of CPU time when multiple federates share processing resources.
+
+- **Queue Size Considerations:** Avoid setting the queue size to the maximum allowed by your platform, as it may improve overall performance if other processes can utilize the available memory.
+
+1. **CPU Yielding for Federate Applications:**
+   - If a federate application doesn't yield CPU periodically, use `RTI's tick(min,max)` function to allow other federates to run after processing all messages.
+
+2. **Shared Memory Manager Tuning:**
+   - In shared memory mode 2, the manager process waits for new messages in shared memory and checks for network messages if a timed wait expires.
+   - Choose a reasonable wait interval based on tolerable latency for network messages.
+   - Setting `RTI_sharedMemoryMgrMaxWait` to 0 prevents CPU yielding when no messages are present; instead, it continuously polls the queue and network interface.
+
+3. **FOM Modules:**
+   - MAK RTI supports FOM modules from HLA Evolved specification, enabling interoperability among federates with different FOMs using the same reference FOM.
+   - Benefits of modular FOMs include agility in federation formation and modification, as only relevant modules need to be introduced.
+   - Federates can specify one or more FOM modules when creating or joining a federation. Examples of FOM modules include:
+     - A fully formed FOM (like traditional use).
+     - An extension of an existing FOM for adding new classes or concepts.
+
+**Additional Key Points:**
+
+- **Shared Memory Manager Process Behavior:**
+  - The shared memory manager process will only wait (suspend) while waiting for new messages to be enqueued on the message queue in shared memory.
+  - If a timed wait expires with no new message, the manager process activates and checks for messages arriving from the network.
+
+- **FOM Module Examples:**
+  - A federate can create a federation using a FOM or submit one when joining to ensure its classes are included in the federation.
+
+- **FOM Extensions:**
+  - Must be non-conflicting.
+  - New or derivative concepts are encapsulated in self-contained modules, which may rely on existing concepts.
+
+- **MAK RTI Configuration:**
+  - Modular FOMs are configured via RTI settings file parameters.
+  - HLA Evolved federates can specify FOM modules during creation and joining using the HLA Evolved API.
+
+- **Current FOM:**
+  - Result of merging all submitted FOM modules, starting with basic MOM classes.
+  - MAK RTI supports three module types: MOM (or MIM), Create, and Join.
+  - Valid FOM modules can only extend the current FOM by adding subclasses, not altering existing classes or attributes.
+
+- **MOM Module (or MIM):**
+  - Allows extending base MOM classes with attributes and parameters.
+  - Replaces the initial current FOM and is validated for necessary RTI operation classes.
+  - In HLA Evolved, it's referred to as the MOM and Initialization Module (MIM).
+
+- **FOM Module Merging:**
+  - The order of module specification matters due to non-commutative and non-associative properties.
+  - Order affects whether merging a FOM module with the current FOM is valid.
+
+- **Lightweight Mode for FOM Modules:**
+  - All federates must use the same FOMs, which should match exactly.
+  - Specify required FOM modules using RTI settings in each federate's RTI settings file:
+    - `(RTI-addCreateFomModule "creationFomModule.xml")`
+    - `(RTI-addJoinFomModule "JoinFomModule.xml")`
+    - `setqb RTI_momModuleExtensionFileName "momExtension.xml"`
+  - Example: Federate A needs 'A.xml' and Federate B needs 'B.xml'; both should specify both in their RTI settings.
+
+- **Creating and Joining with FOM Modules:**
+  - MAK RTI merges FOM modules when creating or joining a federation.
+  - Merging order:
+    - HLA 1.3/1516: MOM module, FED file, create FOM modules (in specified order).
+    - HLA Evolved: MIM, create FOM modules (in specified order).
+  - Join FOM modules are merged into the current FOM in the order specified.
+  - RTI must distribute the FED file and use `rtiexec` with reliable internal messages (`RTI-useRtiExec` and `RTI_internalMsgReliableWhenUsingRtiexec`).
+  - Create/join operations with FOM module merging are atomic; failure to merge one module results in entire call failure. An existing federation's FOM is not affected by new FOM modules specified during creation.
+
+- **Validating FOM Modules:**
+  - Time type, switch tables, and complete class definitions are required for a valid merge.
+  - A module cannot extend existing classes with new attributes or parameters that have already been defined in another module; it can only add new classes.
+  - If a module contains definitions of classes that already exist in the FOM:
+    - They must be identical to the existing class definitions, or
+    - They must be scaffolding definitions (do not replace existing class definitions and do not have to match them).
+
+- **FOM Merging Rules:**
+  - Scaffolding classes (defining hierarchy but no attributes/parameters) introduced out of order take precedence over subsequent complete class definitions, which are flagged as invalid merges.
+  - Once an object or interaction class is added to the current FOM, its attributes and parameters cannot be altered.
+  - Merging non-scaffolding classes requires they are absent in the current FOM or match existing attributes and parameters exactly.
+
+- **Configuring Modular FOMs:**
+  - Enable modular FOM use with `RTI_fomModuleMerging` parameter in RTI settings file (HLA 1516 & Evolved).
+  - Requires enabling `rtiexec`, internal message reliable transport, and FED file distribution.
+  - Federates do not need identical RTI settings entries.
+
+- **Configuring MOM Module:**
+  - Specify a MOM module file with `RTI_momModuleExtensionFileName` parameter in RTI settings file (HLA 1516 & Evolved).
+  - The specified MOM module is merged first into the current FOM.
+  - Default base MOM classes are used if this parameter is omitted.
+
+- **Configuring Create FOM Modules:**
+  - Specify create FOM modules with `RTI-addCreateFomModule` function in RID file (HLA 1516 & Evolved).
+  - Each function specifies a single create FOM module.
+
+- **Notes:**
+  - Rules and parameters may vary depending on the HLA specification used.
+  - Some configuration parameters only affect federations if the federate creates them.
+
+- **Multiple FOM Modules:**
+  - Include multiple entries for FOM modules (Create, Join) in the RTI settings file.
+  - Merged into the current FOM in the order they appear.
+    - *Create:* During `create federation` execution service call.
+    - *Join:* During `join federation` execution service call.
+
+- **Specifying Join FOM Modules:**
+  - Use `RTI-addJoinFomModule "fomModuleName"` function in the RTI settings file.
+  - `fomModuleName` can be an absolute path, relative path, or just a filename.
+
+- **Local FOM Module File:**
+  - Federates can use their local copy of a FOM module instead of having it sent back from the rtiexec.
+  - Control with `RTI_preferLocalFomModule` parameter (1 to enable, 0 to disable).
+
+- **Example Configuration:**
+  - Merge `momExtFomModule.xml`, then `createModule1.xml` into FOM during create.
+  - Merge `joinFomModule1.xml` and `joinFomModule2.xml` into FOM during join.
+  - Use local copies of FOM modules for merges.
+
+- **Update Rate Reduction:**
+  - Feature from HLA Evolved, implemented in MAK RTI for use with RTI 1.3 or RTI 1516 federates.
+
+- **Update Rate Reduction (URR)** is a mechanism enabling federates to control the frequency of best-effort attribute updates received.
+- **Purpose**: To prevent federates from being overloaded by data, even when using declaration management (DM) and data distribution management (DDM) filters.
+- **Functionality**:
+  - Federate sets a maximum update rate for each object instance's attributes.
+  - RTI ensures the delivery rate doesn't exceed this limit. No guarantee on the exact rate, but updates won't arrive more frequently than specified.
+  - The update rate applies independently to each attribute instance, so the practical reflection rate is `number_of_objects * rate`.
+- **Configuration**:
+  - Available in MAK RTI versions 1.3 and 1516.
+  - Rate can be set for object class subscriptions.
+  - Receive Filtering Tolerance can also be specified.
+- **Use Case**: A low-fidelity plan view display federate interested in general entity placement and long-term movements, not detailed maneuvers or interactions.
+
+**Additional Key Points:**
+
+- Update rate reduction does not affect interactions or reliable attribute updates.
+- The RTI delivers attribute updates based on the specified rate and message inter-arrival times. No updates shall be delivered before `t + (1 / x)`, where `x` is the maximum update rate in Hz, and `t` is the wall-clock time of the last delivered message.
+- If no update rate reduction is specified for a federate, it will receive attribute updates at whatever rate they are sent.
+
+MAK Technologies' RTI implements update rate reduction using a combination of multicast and receive filtering:
+
+1. **Multicast Filtering:**
+   - Assigns object classes to multicast addresses using DM multicast filtering.
+   - Defines update rates with offsets in the RID file, creating 'update rate channels'.
+   - Sends attribute updates to the appropriate channel based on the greatest interval since the last update.
+
+2. **Receive Filtering (LRC side):**
+   - Subscribing federates join update rate channels for their specified rate and all slower rates.
+   - Ensures the sum of received updates equals the subscribed update rate.
+   - Performs additional filtering to guarantee the specified rate, compensating for timing issues.
+
+3. **Configuring Update Rate Reduction:**
+   - Specify update rates (in Hz) and associate them with object class attribute subscriptions using nesting operators (inclusive/exclusive).
+   - Assign DM multicast addresses with room for update rate offsets.
+   - Configure receive tolerance for fine-tuning receive filtering versus multicast filtering.
+   - Enable update rate reduction in RTI settings via the RTI Assistant's RTI Preferences dialog box.
+
+**Key Points:**
+- Update rates are defined and assigned offsets to create channels.
+- Multicast filtering sends updates based on intervals, and receive filtering ensures the correct rate is maintained.
+- Configuration involves specifying update rates, associating them with object classes, assigning multicast addresses, and enabling reduction in RTI settings.
+
+The provided text explains how to configure and manage update rates, specifically focusing on Update Rate Reduction (URR), within MAK's RTI settings. Here's a concise summary:
+
+1. **Accessing RTI Settings:**
+   - Select desired configuration.
+   - Click 'Edit' to open dialog box.
+   - Navigate to 'Services' page.
+
+2. **Enabling Update Rate Reduction:**
+   - Check 'Enable Update Rate Reduction'.
+   - Click 'OK'.
+
+3. **Specifying Update Rates (RTI-addUpdateRate):**
+   - Function: `RTI-addUpdateRate name rate`
+   - For each unique update rate in hertz.
+
+4. **Specifying Object Class Subscription Rates (RTI-addUpdateRateSubscription):**
+   - Function: `(RTI-addUpdateRateSubscription class" rateName nesting)`
+   - Apply rates to classes and subclasses inclusively or exclusively.
+   - Rates applied in order, with nesting operators overriding previous operations.
+
+5. **Setting Receive Filtering Tolerance (RTI_receiveTolerance):**
+   - Function: `setqb RTI_receiveTolerance reductionPercentage`
+   - Specify percentage reduction for inter-arrival time between attribute updates.
+
+6. **HLA Evolved:**
+   - Update rates specified in FDD file.
+   - Subscription rates set using API when subscribing to object class attributes.
+
+- **Update Rate Reduction Configuration (RTI 1.3 & 1516 Only):**
+  - Enables update rate reduction: `(setqb RTI_enableUpdateRateReduction 1)`
+  - Adds multicast addresses for different object types:
+    - `ObjectRoot.BaseEntity`: "229.7.8.1"
+    - `ObjectRoot.BaseEntity.GroundVehicle`: "229.7.8.5" (exclusive)
+    - `ObjectRoot.BaseEntity.Aircraft`: "229.7.8.9" (exclusive)
+  - Sets update rates:
+    - High: up to 10 updates per second
+    - Medium: up to 1 update per second
+    - Low: up to 1 update every 10 seconds
+  - Sets receive tolerance: `.01`
+  - Subscribes to update rates based on object types and inclusivity/exclusivity:
+    - `ObjectRoot.BaseEntity`: low (inclusive)
+    - `ObjectRoot.BaseEntity.GroundVehicle`: medium (exclusive)
+    - `ObjectRoot.BaseEntity.Aircraft`: medium (exclusive)
+
+- **General MTL File Information:**
+  - Parameters are set using `(setq parameter_name value)` or `(setqb parameter_name value)` for bound variables.
+  - Comments start with `;;`.
+  - Environment variables can be used in MTL files: `(setqb parameter_name (getenv (quote env_var)))`.
+  - Conditional statements are used for different parameters based on conditions.
+  - String-to-number and number-to-string conversions are done using `string->number` and `number->string`.
+
+The MAK RTI (Real-Time Innovations) settings reference guide describes two types of parameters in the `rid.mtl` file:
+
+- **Assignment Parameters:**
+  - Format: `(setqb RTI_parameterName value)`
+  - Behavior:
+    - Assigns the value to `RTI_parameterName`.
+    - Last occurrence takes precedence.
+  - Examples:
+    ```
+    (setqb RTI_udpPort 4000)
+    (setqb someLispStringVariable 6382)
+    ```
+
+- **Function Parameters:**
+  - Format: `(RTI-parameterName value)`
+  - Behavior:
+    - Applies a function to the value.
+    - Values are usually accumulated.
+
+The `rid.mtl` file contains federation-wide parameters, including:
+
+- **RTI Compliance:**
+  - Parameter: `RTI_forceFullCompliance`
+  - Description: Specifies all relevant RID file parameters to support full compliance with the HLA Interface Specification.
+  - Options:
+    - 0: Do not force full compliance (default)
+    - 1: Force full compliance
+  - Notes:
+    - Ignored unless `RTI_configureConnectionWithRid` is set to 1.
+
+- **Communications Configuration:**
+  - `RTI_useRtiExec`: Determines if the application connects to an `rtiexec` application when creating, destroying, or joining a federation execution.
+    - Options:
+      - 0: Do not use `rtiexec` (default)
+      - 1: Use `rtiexec`
+    - Notes:
+      - Ignored unless `RTI_configureConnectionWithRid` is set to 1.
+
+  - `RTI_tcpPort`: Specifies the port number used for TCP messages. Default: 4000.
+    - Notes:
+      - Ignored unless `RTI_configureConnectionWithRid` is set to 1.
+
+  - `RTI_udpPort`: Specifies the port number used for UDP messages. Default: 4000.
+    - Notes:
+      - Ignored unless `RTI_configureConnectionWithRid` is set to 1.
+
+  - `RTI_destAddrString`: Specifies the IP address where best effort federation execution traffic is sent. Default: 229.7.7.7 (multicast).
+    - Notes:
+      - A value of 0.0.0.0 indicates using the default broadcast address.
+      - Ignored unless `RTI_configureConnectionWithRid` is set to 1.
+
+  - `RTI_tcpForwarderAddr`: Specifies the IP address of the machine running the `rtiexec` application. Default: 127.0.0.1.
+    - Notes:
+      - Required if using reliable transport.
+      - Ignored unless `RTI_configureConnectionWithRid` is set to 1.
+
+Many parameters can also be edited in the RTI Preferences dialog box, as described in "Editing RTI Settings" on page 4-4.
+
+- **RTI Internal Message Reliability:**
+  - Use best effort or reliable transport for RTI's internal bookkeeping messages.
+    - `RTI_internalMsgReliableWhenUsingRtiexec`: Default is 1 (reliable).
+
+- **FOM Data Transport Type Controller:**
+  - Control how FOM data is sent: best effort, reliable, or based on FOM settings.
+    - `RTI_fomDataTransportTypeControl`: Default is 0 (based on FOM settings).
+
+- **Optional Services:**
+  - Enable/disable various services like MOM, time management, next event request/retract, interoperability, and data distribution management.
+    - `RTI_momServiceAvailable`, `RTI_timeMgmt`, `RTI_nextEventRequestAndRetractServiceEnabled`: Defaults are 0 (disabled), 1 (enabled) respectively.
+    - `RTI_extend13and1516interop`, `RTI_dataDistMgmt`: No default value mentioned.
+
+- **DDM Services:**
+  - Enable/disable fixed grid DDM and specify the fixed grid configuration file name.
+    - `RTI_ddmFixedGrid`: Default is 0 (disabled).
+    - `RTI_ddmFixedGridFilename`: Specify the fixed grid configuration file name.
+
+- **Service Implementation:**
+  - Set response interval for service calls, federate ID creation method, object name prefix, discovered class transmission, and FOM backward compatibility.
+    - `RTI_responseInterval`: Default is 3 seconds.
+    - `RTI_useRandomNumberForFedHandle`: Default is 0 (use process ID).
+    - `RTI_enableHlaObjectNamePrefix`: Default is 0 (do not force object names to start with 'hla').
+    - `RTI_sendDiscoveredClass`: Default is 0 (disabled).
+    - `RTI_enableFomBackwardsCompatibility`: Default is 0 (disabled).
+
+**RTI Settings Reference - Federation-Wide Parameters:**
+
+1. **Object Handle Reuse:**
+   - `RTI_reuseReleasedObjectHandles`: Allows reusing object instance handles if the original instance is deleted, breaking uniqueness over federation lifetime but maintaining instant uniqueness.
+
+2. **FED/FDD File Distribution:**
+   - `RTI_distributeFedFile`: Enables/disables FED or FDD file distribution (default: 0). Requires `RTI_useRtiExec` and `RTI_internalMsgReliableWhenUsingRtiexec`.
+   - `RTI_fullFedFileDistribution`: Determines if federates request only missing FOMs (0) or distribute all FOM files to all federates even if they already have it (1).
+
+3. **Name Reservation Service:**
+   - `RTI_enableNameReservation`: Enables/disables name reservation service in HLA 1516 or HLA Evolved (default: 1).
+   - `RTI_strictNameReservation`: Enables strict 1516 name reservation, ensuring no more than one object reserves a name for the lifetime of the federation (default: 0).
+   - `RTI_automaticNameReserveEnabled`: Allows HLA version 1.3 to internally and automatically reserve the name of any object it registers, preventing duplicates but slowing registration.
+
+4. **Attribute Ownership Unavailable Callback:**
+   - `RTI_strictHLA1516eAttributeOwnershipUnavailableCallback`: Forces a strict attribute ownership unavailable callback in HLA Evolved, affecting federates with pending acquisitions (default: 0).
+
+5. **Fault Tolerance:**
+   - `RTI_deleteOrphans`: Enables/disables automatic deletion of objects for which a terminated federate owns the privilegeToDelete (default: 1).
+   - `RTI_enableFederateHeartbeat`: Enables/disables the requirement that federates send a heartbeat.
+   - `RTI_federateHeartbeatInterval` & `RTI_federateTimeoutInterval`: Specify the frequency and timeout interval for federate heartbeat messages (default: 10 seconds and 25 seconds, respectively).
+   - `RTI_reconnectEnabled`, `RTI_federateReconnectPause`, `RTI_rtiExecReconnectPause`: Enable/disable reconnection attempts to the RTI Forwarder after a TCP connection loss, with specified pause durations (default: disabled or 0-5 seconds).
+
+1. **Federation-Wide Parameters:**
+   - **Advanced Network Configuration:**
+     - Enable/Disable support for attribute/parameter sizes exceeding 64 KB:
+       - Parameter: `RTI_use32BitsForValueSize`
+       - Default: Disabled (0)
+       - Reference: "Enabling Support for Large Attributes and Parameters" (page 9-10)
+
+   - **DM Class Multicast Filtering:**
+     - Assign object/interaction classes to separate multicast groups:
+       - Parameters: `RTI-addDMObjectMulticastAddr`, `RTI-addDMInteractionMulticastAddr`
+       - Default: Disabled
+       - Reference: "Filtering by Multicast Groups Using Declaration Management" (page 9-15)
+
+   - **RTI Forwarder Parameters:**
+     - Specify IP address of a local Forwarder Group member:
+       - Parameter: `RTI-addForwarderGroupAddrString`
+       - Required when forwarder groups are used
+       - Reference: "Configuring RTI Forwarders for Distributed Forwarding" (page 10-15)
+     - Determine if distributed forwarders handle UDP forwarding and the mode to use:
+       - Parameter: `RTI_distributedUdpForwarderMode`
+       - Modes: Off (0), Legacy Mode (1), Combined UDP/TCP (2)
+       - Reference: "Configuring Distributed UDP Forwarding" (page 10-23)
+
+   - **Additional Parameters:**
+     - Specify RTI Forwarder routes file:
+       - Parameter: `RTI_forwarderRoutesFile`
+       - Default: 'routes.mtl'
+     - Specify port for distributed forwarder:
+       - Parameter: `RTI_distributedForwarderPort`
+       - Default: 5000
+     - Enable/Disable smart forwarding transport for internal/FOM messages when using rtiexec:
+       - Parameter: `RTI_internalMsgSmartForwardingWhenUsingRtiexec`
+       - Ignored if RTI_useRtiExec is not set to 1
+       - Default: Enabled (1)
+     - Specify sender-side filtering mode:
+       - Parameter: `RTI_smartForwardingLevel`
+       - Modes: Off (0), Subscription-based routing (1), Advanced subscription-based routing (2)
+       - Default: Off (0)
+       - Reference: "Configuring Sender-Side Filtering (Smart TCP Forwarding)" (page 9-6)
+     - Specify maximum number of federates allowed in a federation:
+       - Parameter: `RTI_maxNumFederates`
+       - Applies when sender-side filtering is enabled
+       - Default: 100
+     - Specify maximum number of objects a federate can instantiate:
+       - Parameter: `RTI_maxObjectsPerFederate`
+     - Ignore routing filters for the specified interval (default: 3.0) when publication changes affect forwarding:
+       - Parameter: `RTI_forwardingDelay`
+
+   - **Note:** The parameter `RTI_forwardingDelay` is not compatible with a centralized RTI Forwarder.
+
+- **Federation-Wide Parameters:**
+  - **Routing Control:**
+    - `RTI_routeToAllByDefault`: Routes to all federates until informed otherwise (default: disabled).
+  - **Discovery Message Bundling:**
+    - `RTI_discoveryMsgBundlingDelay`: Delays discovery message sending for specified seconds to bundle messages and reduce traffic (default: 0 seconds).
+  - **Message Filtering:**
+    - `RTI_enableFedexMsgRouting`: Enables filtering of internal and FOM messages not processed by rtiexec (default: enabled).
+
+- **Save/Restore Configuration:**
+  - **Enable Save/Restore:**
+    - `RTI_enableSaveRestoreWhenUsingRtiexec`: Enables/disables save/restore when using rtiexec.
+  - **Timeout Settings:**
+    - `RTI_saveRestoreTimeout`: Specifies the timeout for save/restore operations in seconds (default: 120 seconds).
+  - **Transient Message Handling:**
+    - `RTI_saveTransientMessages`: Enables/disables saving of transient messages during a save, to be delivered upon restore (default: disabled).
+
+- **Update Rate Reduction:**
+  - **Enable Update Rate Reduction:**
+    - `RTI_enableUpdateRateReduction`: Enables/disables update rate reduction.
+  - **Register Update Rate:**
+    - `RTI_addUpdateRate`: Registers an update rate with the LRC.
+  - **Apply Update Rate Reduction:**
+    - `RTI_addUpdateRateSubscription`: Applies update rate reduction to a specified object class.
+  - **Receive Tolerance:**
+    - `RTI_receiveTolerance`: Specifies a percentage reduction to the inter-arrival time between attribute updates.
+
+- **LRC-Specific Parameters:**
+  - **Connection Configuration:**
+    - `RTI_configureConnectionWithRid`: Specifies using connection configuration parameters in the RID file instead of RTI Assistant configurations.
+  - **License Management:**
+    - `RTI_forceUnlicensedForTwo` & `RTI_disableUnlicensedForTwo`: Control license checking and unlicensed mode for MAK RTI.
+  - **License Checkout:**
+    - `RTI_rtiExecPerformsLicensing`: Enables/disables license checkout from the rtiexec.
+
+- **License Management:**
+  - `rtiexec` manages licenses for joining federates.
+  - Default behavior: no license limit (`0`).
+
+- **Multicast Discovery Configuration:**
+  - Enabled/disabled with `RTI_mcastDiscoveryEnabled` (default: disabled).
+  - Parameters:
+    - Network interfaces for multicast and TCP traffic.
+    - Multicast discovery port, address, and response delay intervals.
+    - Number of tries before defaulting to best effort transport.
+
+- **Exception Handling:**
+  - Exception throwing behaviors can be controlled with:
+    - `RTI_throwExceptionOnConcurrentAccess`: Concurrent access exceptions (default: disabled).
+    - `RTI_throwExceptionCallNotAllowedFromWithinCallback`: Call-not-allowed-from-within-callback exceptions (HLA Evolved only).
+    - `RTI_throwExceptionForDisabledService`: Exceptions for disabled services (default: enabled).
+  - Warnings for disabled services are enabled by default.
+
+- **Switch Table Management:**
+  - Preference between RID parameters and FED file switch tables with `RTI_preferRidToFedSwitchTable`.
+  - Switches that can be enabled/disabled, but may be overridden:
+    - Auto Provide
+    - Convey Region Designator
+    - Convey Producing Federate
+    - Service Reporting
+    - Exception Reporting
+    - Delay Subscription Evaluation
+
+1. **Advisory Configuration (requires `RTI_preferRidToFedSwitchTable` enabled):**
+   - Enables/Disables advisory switches for interaction, object class, attribute relevance, and attribute scope.
+
+2. **Diagnostic Configuration:**
+   - Sets notification message category from fatal to debug.
+   - Specifies log file directory and enables logging with a specified name or pathname.
+   - Enables/disables and specifies log files for rtiexec and RTI Forwarder.
+   - Enables/disables writing logs to the same file.
+   - Enables/Disables dumping FED/RID file contents when notification level is verbose (>3).
+   - Detaches notification messages from standard output (default: no levels detached).
+   - Enables/Disables checking RID file consistency with rtiexec's RID file.
+   - Specifies additional parameters to check for consistency.
+
+- **Parameter Removal:**
+  - **RTI-removeRidParametersToOverride**: Specifies parameters to exclude from default consistency checks.
+
+- **RTIspy Configuration:**
+  - **Network Testing:** Enables (1) or disables (0).
+  - **Network Statistics Monitoring:** Enables viewing federate's network statistics in RTIspy, with plug-in constraints. Default: enabled.
+
+- **Service Implementation:**
+  - **Packets per Tick:** Specifies packets read per tick (all pending for 0, one packet for 1). Default: all pending.
+  - **Attribute/Parameter Validity Check:** Enables (1) or disables (0), affecting exception throwing. Default: enabled.
+
+- **Discovery:**
+  - **Unknown Object Processing:** Enables (1) or disables (0) processing unknown objects for discovery. Default: enabled.
+
+- **FED File Management:**
+  - **Default FED File:** Specifies a default FED file in the RID file for lightweight mode joining. Default: empty string (.fed).
+  - **CRC Check Behavior:** If FED file distribution is disabled, specifies CRC check behavior for federate's FED file. Default: notify and allow join.
+
+- **Exception Handling:**
+  - **Federate Ambassador Exceptions:** Configures the RTI to catch or rethrow exceptions from federate ambassador callbacks. Default: catch exceptions.
+
+- **FOM Checking:**
+  - **Strict FDD File Format Check:** Enables strict checking of FDD file format, causing create federation service failure on errors.
+
+- **HLA File Strict Checking:**
+  - `strictChecking`: 0 (No strict checking), 1 (Strict checking, default)
+
+- **Time and Timeout Settings:**
+  - `RTI_defaultTimeImplementation`: Sets default time implementation
+  - `RTI_flushTimeoutInterval`: Message flush timeout during federation resignation (Default: 3.0 seconds)
+
+- **Network Configuration:**
+  - `RTI_mcastTtl`: Multicast packet Time-To-Live parameter (Default: 2)
+  - `RTI_tcpNoDelay`: TCP socket option for latency or throughput emphasis (Default: 1)
+
+- **Compression Settings (TCP & UDP):**
+  - Enable compression (`RTI_enableTcpCompression`, `RTI_enableUdpCompression`)
+  - Compression levels (`RTI_tcpCompressionLevel`, `RTI_udpCompressionLevel`): Minimal (1) to maximum (9)
+
+- **Buffer Sizes and Packet Bundling:**
+  - TCP read buffer size: `RTI_tcpBufferSize` (Default: 500,000 bytes)
+  - Network receive/send buffer sizes (`RTI_socketReceiveBufferSize`, `RTI_socketSendBufferSize`)
+  - Enable packet bundling (`RTI_enablePacketBundling`), specify bundle size (`RTI_packetBundlingSize`)
+  - Maximum UDP packet size: `RTI_maxUdpPacketSize` (Default: 15,000)
+
+- **Best Effort Send Retry:**
+  - Enable/disable automatic resending of failed best effort messages (`RTI_enableBestEffortSendRetry`, Default: 1)
+
+- **Best Effort Send Retry Settings:**
+  - Enable best effort send retry (`RTI_enableBestEffortSendRetry` = 1)
+    - Number of retries for failed best effort sends: `RTI_bestEffortSendRetries` (Default: 50)
+    - Time between retries in microseconds: `RTI_bestEffortSendRetryWaitUsec` (Default: 50)
+
+- **Message Throttling and Delay:**
+  - Enable message throttling (`RTI_enableMessageThrottling` = 1)
+    - Delay before processing requests: `RTI_transmitDelay` (Default: 0)
+    - Messages per second to send: `RTI_transmitRate` (Default: 0.0, disabled)
+    - Buffer automatic provideAttributeValueUpdate callbacks: `RTI_autoProvideDelay` (Default: -1, disabled)
+
+- **Additional Settings:**
+  - Use busy wait in tick(min,max) when no messages are pending: `RTI_useBusyWaitForTickMinMax` (Default: 0, disabled)
+  - Send DDM interaction region info both best effort and reliably the first time: `RTI_dualTransmitFirstInteractionRegions` (Default: 0, disabled)
+  - Add additional destination addresses for best effort packets: `RTI_addDestAddrString` (Default: 0.0.0.0)
+  - Size of queue for messages exceeding receive buffer size: `RTI_maxForwarderQueue` (Default: -1, indefinite)
+  - Apply RTI_autoProvideDelay to all update requests: `RTI_allProvideUpdateRequestsDelayed` (Requires message throttling and non-zero RTI_autoProvideDelay)
+
+- **Processing Model:**
+  - Default: Asynchronous I/O (`RTI_processingModel` = 1)
+    - Synchronous mode: `RTI_processingModel` = 0
+    - Asynchronous I/O with network reads/writes in a separate thread: `RTI_processingModel` = 1
+    - Asynchronous message processing without federate ambassador callbacks: `RTI_processingModel` = 2
+    - Asynchronous callbacks processing messages and invoking callbacks: `RTI_processingModel` = 3
+
+- **Asynchronous Callbacks (i):**
+  - Federates must handle callbacks asynchronously and thread-safely.
+
+- **RTI_tickWaitPeriod:**
+  - Determines the minimum time a federate waits for messages during asynchronous I/O.
+  - Default: 0.0 seconds.
+
+- **RTI_IOPeriod:**
+  - Specifies the duration of polling operations (not used in Windows).
+  - Must be >= 0, default: 0.1 seconds.
+
+- **RTI_tickFavorsNetwork:**
+  - Enables or disables a thread yield in the tick() function.
+  - Default: enabled (1).
+
+- **RTI_maxIOQueue & RTI_maxIOCount:**
+  - Limit message queue size and thread cycling times, respectively.
+  - Defaults: 500,000 messages, 50,000 cycles.
+
+- **DDM Configuration:**
+  - **RTI_minChannelAddr & RTI_maxChannelAddr:** Define the range of multicast addresses used by DDM.
+    - Default IPv4 range: 224.0.1.0 to 239.255.255.255.
+    - Default IPv6 range: ff12::3:1 to ff12::3:ffff.
+
+- **RTI_addressDelay:**
+  - Specifies the delay in broadcasting data changes while DDM routing information propagates.
+  - Default: 1.0 second.
+
+- **RTI_conveyOnlyAvailableDimensions:**
+  - Enables or disables including unavailable dimensions in conveyed regions.
+  - Default: disabled (0).
+
+- **RTI_implicitDdmParamsFile:**
+  - Specifies the name of the file containing implicit DDM configuration parameters.
+  - Default: "implicitDdmParams.mtl".
+
+- **MOM Configuration:**
+  - **RTI_momVerboseLevel:** Controls MOM service reporting verbosity, enabling FOM names in reports when non-zero.
+    - Default: non-zero (verbose).
+  - **RTI_momExceptionLogging:** Enables or disables MOM exception logging.
+    - Default: disabled (0).
+  - **RTI_momFederateUpdateInterval:** Specifies the default update interval for the MOM Federate object.
+    - Default: no updates (0 seconds).
+
+- **Save/Restore Configuration:**
+  - **RTI_saveRestoreDirectory:** Specifies the directory used for writing and reading save files.
+
+The provided text chunks discuss various parameters in the MAK RTI User Guide, focusing on LRC (Local Region Coordinator) settings and FOM (Federation Object Model) management.
+
+1. **Shared Memory Parameters:**
+   - **Mode**: Enables/disables shared memory for communication between co-located federates.
+     - Valid settings: 0 (disable), 1 (enable only shared memory), 2 (enable with network I/O).
+     - Default: Disabled (0).
+   - **Name**: Specifies the shared memory file name. All co-located federates must use the same name.
+     - Default: RtiSharedMemory.
+   - **Queue Length**: Specifies the number of message queue segments in shared memory.
+     - Default: 5000.
+   - **Max Wait Time**: Specifies how long the Shared Memory Queue Manager waits for messages before polling the network interface.
+     - Default: 0.25 seconds.
+   - **Log File Name**: Enables logging shared memory executive output to a file with the specified name.
+     - Default: shmExec.log.
+
+2. **Modular FOMs Parameters:**
+   - **Merging**: Enables/disables merging of FOM modules.
+     - Default: Disabled (0).
+   - **Sorting**: Enables/disables sorting of FOM module designators based on HLA1516-2010 dependencies.
+   - **Add Create/Join Fom Module**: Specifies a FOM module to add when creating/joining a federation.
+   - **Use Local Fom Module**: Specifies using the local FOM module file instead of having rtiexec send it back.
+   - **Prefer Local MOM Module**: Specifies a MOM (Management Object Model) module file to add when creating a federation.
+
+3. **Tick Configuration:**
+   - **Busy Wait**: Replaces the select mechanism with a busy wait for finer control of tick(min,max).
+   - **Single Callback Per Tick**: When enabled, tick(min,max) returns after processing a single message or when the minimum time has been exceeded.
+
+**Recommendations:**
+- Avoid enabling the busy wait mechanism if using asynchronous I/O.
+- Carefully consider enabling FOM module merging and sorting based on your specific use case.
+
+- **Purpose:** The appendix introduces example federates for exploring High Level Architecture (HLA) and Run-Time Infrastructure (RTI) using MAK Technologies' examples.
+
+- **Examples:**
+  - **rtisimple (B-3):**
+    - A simple C++ federate demonstrating basic RTI API usage.
+    - Creates a federation, joins it, and publishes/subcribes to the BaseEntity object class.
+    - Registers an object of that class, updates its attributes, and sends interactions periodically.
+    - Interoperates with other rtisimple federates using MAK RTI, allowing discovery of each other's objects, reflection of updated attributes, and reception of interactions.
+
+  - **simpleDDM (B-5):**
+    - An adaptation of rtisimple incorporating Data Distribution Management (DDM).
+    - DDM controls data exchange efficiency by managing which objects' data are sent to which federates based on their interests and the object's location in the virtual environment.
+
+- **Building Examples:**
+  - Use Visual Studio solutions or Makefiles for C++ examples.
+  - Set `QTDIR` environment variable to point to your Qt installation for Qt-dependent examples (like HLA Bounce and simpleDDM).
+  - Download Qt from MAK Technologies' website if not already installed.
+
+- **Federation Basics:**
+  - Performs typical federation calls (join, create) with objects registered using Region.
+  - Example involves an object attribute and interaction published/subscribed with Region.
+
+- **Example Setup:**
+  - Requires two federates: one publisher (-isPublisher 1) and one subscriber (-isPublisher 0).
+  - Regions are conceptualized in seconds (0-43200, representing a 12-hour axis) and global time zones (0-23).
+
+- **Published Object & Interaction:**
+  - Published object: current time of the publisher.
+  - Published interaction: hourly chimes (quarterlyChime at 12, 3, 6, 9 o'clock; others at other hours).
+  - Time zone changeable in publisher via command line (-timeZone time_zone) or dynamically in subscriber's GUI.
+
+- **GUI Display:**
+  - Displays clock hands showing current/last reflected position and region in seconds dimension.
+  - Shows a horizontal timeline representing 12-hour extent, subscribed region, and current/last reflected position.
+
+- **Subscribed Region Specification:**
+  - Command line options: -minSubscribeH/-maxSubscribeH (hours), -minSubscribe/-maxSubscribe (seconds).
+
+- **simpletime Example Federate:**
+  - Creates a federation, enables time management, publishes/subscribes to object and interaction classes.
+  - Updates attribute values, sends fire/detonation interactions based on stored position or keyboard command.
+  - With multiple federates, each discovers the other's object, reflects updated attributes, and receives interactions.
+
+- **Starting simpletime Federate:**
+  - Use command line option -m totalNumberOfFederates to start the first federate.
+
+The text covers two main topics: a command for federates to wait until others join, and an example federate called "HLA Bounce" demonstrating several HLA features.
+
+1. **Wait Until Federates Join:**
+   - A command is available to make a federate wait until a specified number of federates (including itself) have joined before synchronizing and running.
+   - Subsequent federates can be started without any specific command line options.
+
+2. **HLA Bounce Example Federate:**
+   - This example federate showcases subscription/unsubscription, ownership management, and Data Distribution Management (DDM) using a graphical user interface that displays bouncing balls.
+   - **Running HLA Bounce:**
+     - Launch the application from MAK Technologies > MAK RTI 4.6 > Examples > HLA Bounce version (1.3, 1516, or 1516e).
+     - Connect to an RTI connection and start a second instance.
+     - Create/join a federation, add balls, and subscribe to view other federates' balls.
+   - **Demonstrating Features:**
+     - **Ownership Management:** Acquire remote balls to change their color and ownership.
+     - **DDM:** Draw regions to view only balls within that specific area.
+
+- **Purpose:** Demonstrates HLA (High Level Architecture) federate functionality through a simple arcade-style shooter game, including object publishing, subscribing, attribute updates, and interaction sending.
+
+- **Gameplay:**
+  - Each instance creates a player's screen with a navigable ship to fire and dodge shots.
+  - Players can join as observers, subscribing only to Ship and Shot objects without publishing any objects.
+  - A game requires at least two active players to start; observers do not count towards the minimum number of players.
+
+- **Platform:** Java application. Requires JDK (Java Development Kit) installed for building.
+
+- **Build Instructions:**
+  - Navigate to `./makRti4.6/examples/java/MakShooter`.
+  - Run the appropriate build script based on your operating system:
+    - Windows: `buildInWindows.bat`
+    - Linux: `buildInLinux.sh`
+  - This generates the `MakShooter.jar` file.
+
+- **Run Instructions:**
+  - Navigate to `./makRti4.6/examples/java/MakShooter`.
+  - Run the appropriate run script based on your operating system:
+    - Windows: `makShooter1516e.bat`
+    - Linux: `makShooter1516e.sh`
+  - Follow these in-game prompts to configure and start a game:
+    1. Click "Start/Join Game" button.
+    2. Select the desired connection.
+    3. Click "Connect".
+    4. Fill out the "Configure Game" dialog box with necessary details:
+       - Federation Name: Unique name for the federation (if starting a new game) or select an existing one.
+       - Federate Name: Player's ship name.
+       - Ship Color: Default is blue; click "Color Chooser" to change.
+       - Observer: Check if joining an ongoing game as an observer.
+    5. Click "OK".
+    6. Start a second instance of MAK Shooter following the same steps, using the same Federation Name and a different Federate Name.
+
+- **Game Controls:**
+  - Up/Down Arrow keys: Move ship vertically.
+  - Space Bar key: Fire shots.
+
+- **Quit Game:** Click "Disconnect From Game" button to quit. Other players will be notified and disconnected as well.
+
+The provided text chunks discuss various aspects of the MAK RTI (Run-Time Infrastructure) User Guide Document, focusing on command-line options, indices, and key concepts. Here's a summarized version that retains key points:
+
+1. **Command-Line Options:**
+   - The document lists numerous command-line options for both the MAK RTI and RTI Assistant tools.
+   - Options include:
+     - Network configuration: interfaces, ports, addresses, multicast settings
+     - Log files and notification levels
+     - Compliance mode (full HLA or not)
+     - Daemon mode and graceful shutdown
+     - Help and version information
+
+2. **Indices:**
+   - The index covers a wide range of topics, including:
+     - Command-line options (both long and short forms)
+     - Address types: IP, multicast, TCP Forwarder
+     - Advisory messages and callbacks
+     - Asynchronous processing and message handling
+     - Attribute handling and ownership
+     - Best effort communication vs. reliable communication
+     - Centralized vs. distributed forwarding
+     - Compatibility with other RTIs
+     - Configuration and diagnostics tools (RTI Assistant, RTI Forwarder)
+     - Data distribution management (DDM) approaches
+     - Federate Ambassador and RTIAmbassador services
+     - Heartbeat and timeout intervals
+     - Implicit DDM and region designators
+     - Licensing and consistency checking
+     - Message compression and filtering
+     - Network configuration and congestion control
+     - Performance tuning and shared memory
+     - Silent failure and graceful shutdown
+     - Update rate reduction
+
+3. **Key Concepts:**
+   - The document discusses various concepts such as:
+     - Asynchronous processing vs. synchronous processing
+     - Best effort communication (UDP) vs. reliable communication (TCP)
+     - Centralized TCP forwarding vs. distributed UDP forwarding
+     - Data distribution management (DDM) approaches: fixed grid, distributed region, and implicit DDM
+     - Message bundling and buffering to optimize network performance
+     - Configuring RTI settings for optimal performance and compatibility
+
+4. **Example Federates:**
+   - The document includes examples of federates, such as the MAK Shooter Example.
+
+5. **MAK Technologies Products:**
+   - The document is related to products from MAK Technologies, including their RTI (Run-Time Infrastructure) and associated tools like RTI Assistant and RTI Forwarder.
+
+- Defense Modeling and Simulation Office (DMOSO).
+
+**Delay and Forwarding:**
+- **Delay Forwarding:** A-16
+- **Multicast Discovery:** A-21
+- **Delay Subscription Evaluation:** 4-16, A-23
+- **Delay Update Requests:** 4-11
+- **Internal Message Delay Time:** 11-7
+- **Distributed Forwarding:**
+  - Configuration: 10-16, 10-29
+  - Load Balancing: 10-15
+  - Optimization on WAN: 10-13
+  - Routes File: 10-17
+  - Single-Portal Interconnection: 10-13
+  - Topologies: LAN, UDP, WAN (10-8, 10-11, 10-22)
+- **Distributed Region DDM:** 12-11, A-8
+- **Distributed Singleton Forwarder Network:** 10-10
+
+**Deleting and Disabling:**
+- **Deletion:**
+  - Federates and Federation Executions: 5-20
+  - Orphan Objects: 4-9, A-11
+  - RTI Settings: 4-27
+- **Disabling:**
+  - Latency Testing: 8-4
+  - RID File Consistency Checking: 4-32
+  - RTI Assistant: 5-12
+  - Shared Memory: 13-3
+
+**Diagnostic and Display:**
+- **Diagnostic:**
+  - Configuring: 5-3
+  - Data Logging: 7-6
+  - Level: 5-13, 5-16
+  - Limiting Message Number: 5-3
+- **Displaying:**
+  - Federate Information: 7-2
+  - Federation-Wide Messages: 6-13
+  - FOM Interactions and Objects: 7-3
+  - Time Management Information: 6-10
+
+**Other Key Points:**
+- **Demilitarized Zone (DMZ):** 10-5
+- **Destination Address:** A-5
+- **destroyFederationExecution Service:** 6-6
+- **Detach Notify Level:** 4-17
+- **Disable Unlicensed for Two Setting:** 4-25
+- **Disabled Service Warning and Exception:** 4-19, A-22
+- **Discovery Message Delay:** 4-10
+- **Discovery Processing of Unknown Objects:** 6-21
+- **Distributed Forwarder Port:** A-14
+- **Distributed UDP Forwarding (Unicast):** 10-26
+
+**MAK Technologies:**
+- Index and documentation for MAK Technologies products.
+
+The provided text chunks from a MAK RTI User Guide Document discuss various aspects of the RTI (Run-Time Infrastructure) system, focusing on settings, features, exceptions, and examples. Here's a concise summary:
+
+1. **Settings and Features:**
+   - Enable/Disable:
+     - Data Distribution Management
+     - Exception Logging
+     - Federate Heartbeat
+     - Message Throttling
+     - MOM (Message Oriented Middleware)
+     - Name Reservation
+     - Packet Bundling
+     - Reconnections
+     - Send Internal RTI Messages Reliable (TCP)
+     - TCP/UDP Compression
+     - Time Management
+     - Update Rate Reduction
+   - Enable Save and Restore RTI setting.
+   - Set Dynamic Link Compatibility, Extended HLA Version Compatibility, Exception Reporting switch.
+
+2. **Exceptions:**
+   - Handle exceptions for:
+     - Disabled services
+     - Concurrent access attempts
+     - Broken connections
+     - Federate ambassador callback
+   - Configure exception logging for MOM.
+
+3. **Environment Variables:**
+   - RTI_ASSISTANT_DISABLE
+   - RTI_ASSISTANT_IPV4_ADDRESS
+   - RTI_ASSISTANT_IPV6_ADDRESS
+   - RTI_ASSISTANT_PORT
+   - RTI_ASSISTANT_REMOVE_SHUT_DOWN_ALL
+   - RTI_ASSISTANT_TTL
+   - RTI_CONFIG
+   - RTI_RID_FILE
+
+4. **Examples:**
+   - Building and federates examples (B-2)
+   - HLA Bounce example (B-8)
+   - rtisimple, simpleDDM, simpletime examples (B-3, B-5, B-6)
+
+5. **Federate and Federation Management:**
+   - Configure federates with:
+     - Distributed forwarding
+     - Shared memory use
+   - Delete and list federates
+   - View federation details
+   - Manage federation execution, save and restore
+   - Set maximum number of federates
+
+6. **Additional Topics:**
+   - Dynamic library and dynamic linking
+   - DTD (Document Type Definition), HLA 1516
+   - FDD and FED files:
+     - Compatibility
+     - Distribution
+     - Dumping
+     - Search order
+   - RID file consistency checking
+   - Enable:
+     - Latency testing
+     - Compression
+     - Bundling
+     - Save and Restore
+     - Shared memory
+     - Time management display
+
+The provided text chunks from the MAK RTI User Guide Document cover various aspects of using and configuring Real-Time Innovations (RTI) software. Here's a revised summary with key points separated into bullet points for clarity:
+
+**Federation and Access:**
+- **Federation and Federation View:** Pages 6-8, 10-28.
+- **Connecting to RTI Forwarder:** Page 10-28.
+- **Command Line Access:** Pages 5-12.
+- **File Types and Pages:**
+  - FED: Page 9-2
+  - MTL: Pages 1-4, A-2
+  - RID: Pages 4-2, 9-2
+
+**RTI Configuration and Messaging:**
+- **Routes:** Pages 5-17.
+- **RTI Settings:** Pages 4-30.
+- **Filtering and Messaging:**
+  - Implicit DDM Usage: Pages 12-22.
+  - Messages: Page 9-7.
+  - Updates: Page 15-2.
+
+**Network Configuration:**
+- **Firewall for Distributed Forwarding:** Page 10-29.
+
+**Fixed Grid and DDM:**
+- **Configuration File:** Appendix A-8.
+- **Fixed Grid DDM:** Pages 12-13, A-8.
+- **Effects on RTI Services:** Page 12-20.
+- **Calculating Axes:** Page 12-17.
+- **Configuring and Modifying for Implicit DDM:** Pages 12-5, 12-27.
+- **Range Bounds:** Page 12-19.
+
+**Message Management:**
+- **Flushing Messages (Timeout):** Appendix A-30.
+
+**FOM (Fast RTI Object Model):**
+- **Checking and Displaying Data:** Pages 4-14, A-30; 7-3.
+- **FOM Data Transport Type Setting:** Pages 4-12, 9-2.
+- **Configuring, Merging, and Extending FOM Modules:**
+  - Configuring: Page 14-7
+  - Merging: Pages 14-2, A-42
+  - Extending: Pages 14-6, 14-10
+
+**RTI Parameters:**
+- **Force Unlicensed for Two:** Page 4-25; Appendix A-19.
+- **Forwarder Address:** Appendix A-6.
+
+**Forwarder Management:**
+- **Shutting Down Forwarder:** Page 5-18.
+- **Forwarder Group and Single-Portal Configuration:** Pages 10-8, 10-23; Appendix A-14.
+- **Forwarder Settings:**
+  - Forwarder Listens to Local UDP Messages: Page 4-11
+  - Forwarder Log File Name: Page 4-18
+
+The provided text chunks discuss various aspects of the MAK RTI (Run-Time Infrastructure) User Guide Document. Here's a condensed summary that retains key points:
+
+1. **RTI Forwarder:**
+   - Delay: A-16
+   - Smart forwarding: 4-11, 4-12, A-15
+   - Full compliance: 11-2, A-4
+
+2. **Functionality:**
+   - `createRTIambassador`: 4-30
+   - `tick()`: 2-4, 2-5
+   - Graphing federate statistics: 8-17
+
+3. **Groups and Forwarders:**
+   - Forwarder group: A-14
+   - Multicast forwarder: A-13
+
+4. **Command-line Options:**
+   - `-h`: 5-13, 5-16, 13-7
+   - `-l`: 5-16, 13-7
+   - `-k`, `-K`: 13-7
+
+5. **Heartbeat and Intervals:**
+   - Heartbeat interval: 4-8, A-12 (configuring: 6-16)
+   - Heartbeat timeout: 4-8, A-12
+
+6. **HLA (High Level Architecture):**
+   - HLA API performance optimization: 8-2
+   - HLA compliance configuration: 11-2
+   - Interoperability between HLA 1.3 and 1516: 1-7
+
+7. **Logical Time:**
+   - Implementing logical time: 3-6
+   - LogicalTime classes: 3-8, 3-9
+
+8. **Federation and Federates:**
+   - Federate ID: A-9
+   - Listing federations and federates: 5-20
+
+- **FOM (Federal Object Model) Module:**
+  - Lightweight mode operation: 14-4
+  - Module merging capabilities: 14-5
+  - Federate update interval management: 14-3, A-40
+
+- **MOM (Module Management) Module/Service:**
+  - Configuration process: 14-7
+  - Module merging functionality: 14-5
+  - Module specification: 14-7
+  - Service reporting features: A-40
+  - Federate update interval setting: 4-7, 11-5
+
+- **Interoperability:**
+  - Crucial concept for system integration: 1-7
+
+- **RTI Assistant:**
+  - Startup process: A-38
+  - Discovery address configuration: A-20
+  - Multicast group and TTL settings management: 9-16, 9-18, 5-12
+
+- **Multithreading & Multithreaded Applications:**
+  - Key concepts for efficient processing: 2-2, 2-6
+
+- **Command-line Options:**
+  - -N option: 5-16
+  - -n option: 5-13, 5-16, 13-7
+
+- **Name Reservation & Name Reservation Service:**
+  - Lightweight mode operation: 6-7
+  - Strict name reservation policy: A-10
+
+- **Network Topics:**
+  - Compatibility considerations: 1-5
+  - Congestion management: 9-13
+  - Network overhead reduction: 8-2
+  - Statistics monitoring: 4-21, A-27
+  - LAN topologies overview: 2-7
+  - Network address translation (NAT) support: 10-29
+
+- **Network Interface:**
+  - Address configuration management: A-20
+  - TCP interface support: A-20
+
+- **RTI Connext DDS Micro:**
+  - Lightweight, embedded version for resource-constrained systems and edge devices.
+  - Key features: Small footprint (<10kB), low latency (<1ms), deterministic performance, zero-copy data transfer, built-in security and QoS.
+
+- **RTI Connext DDS Professional:**
+  - Full-featured, high-performance version for enterprise and industrial applications.
+  - Key features: High throughput (>100MB/s), low latency (<1ms), deterministic performance, zero-copy data transfer, advanced discovery, dynamic data typing, integration with other middleware.
+
+- **RTI Connext DDS Secure:**
+  - Enhanced security features for mission-critical applications.
+  - Key features: End-to-end encryption/authentication, fine-grained access control, secure key management, secure discovery, integration with industry-standard security technologies.
+
+- **RTI Connext DDS Tools:**
+  - Suite of tools for developing, deploying, and managing RTI Connext DDS applications.
+  - Includes core API library (rti_connext_dds_api), command-line tools (rti_connext_dds_tools), and GUI (rti_connext_dds_console).
+
+- **RTI Connext DDS Documentation:**
+  - Comprehensive documentation covering user's guide, API reference manual, tutorials, examples, release notes, and FAQs.
+

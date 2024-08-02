@@ -1,0 +1,12 @@
+[
+    {
+      "InputDirectory": "\\data\\rti\\MAK_RTI_4-6_Users_Guide.pdf",
+      "OutputDirectory": "\\compressed\\rti\\MAK_RTI_4-6_Users_Guide.txt",
+      "IncludeRange": "15 96"
+    },
+    {
+      "InputDirectory": "\\data\\vrforce\\VR-Forces_5.1_Users_Guide.pdf",
+      "OutputDirectory": "\\compressed\\vrforce\\VR-Forces_5.1_Users_Guide.pdf",
+      "IncludeRange": "75 1617"
+    }
+  ]
