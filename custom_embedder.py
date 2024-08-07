@@ -29,6 +29,20 @@ def KnnSearch(question_embedding, embeddings, k=5):
     return best_matches
 
 
+def ReplaceDirectory(full_path, old_dir, new_dir):
+    path_components = full_path.split(os.sep)
+    
+    for i, component in enumerate(path_components):
+        if component == old_dir:
+            path_components[i] = new_dir
+            break
+    
+    # Join the modified path components
+    modified_path = os.sep.join(path_components)
+    
+    return modified_path
+
+
 def GenerateEmbeddings(compressed_filename, model):
     with open(compressed_filename, "r") as input_doc:
         if input_doc.closed:
@@ -60,17 +74,27 @@ def GenerateAllEmbeddings(folder_directory, outfile_directory, model):
     all_embeddings = []
     for filename in compressed_files:
         print('Performing embedding for - ', filename)
+
+        # New output directory
+        # Essentially: __file_dir__\\compressed\\...\\my_compressed_data.txt
+        # is converted to __file_dir__\\embedding\\...\\my_compressed_data.pkl
+        new_out_dir = filename.replace('\\compressed\\', '\\embedding\\')
+        new_out_dir = new_out_dir.replace('.txt', '.pkl')
+
         status, embeddings = GenerateEmbeddings(filename, model)
         if status == True:
-            all_embeddings.append(embeddings)
-        print('Completed embedding for - ', filename)
+            if new_out_dir != '':
+                # Create directory if doesn't exist
+                output_folder = os.path.dirname(new_out_dir)
+                if not os.path.exists(output_folder):
+                    os.makedirs(output_folder)
+                
+                print("New write directory: ", new_out_dir)
 
-    if outfile_directory != '':
-        # Create directory if doesn't exist
-        output_folder = os.path.dirname(outfile_directory)
-        if not os.path.exists(output_folder):
-            os.makedirs(output_folder)
-        with open(outfile_directory, 'wb') as f:
-            pickle.dump(all_embeddings, f)
+                # Write each embedding as a binary *.pkl file
+                with open(new_out_dir, 'wb') as f:
+                    pickle.dump(embeddings, f)
+
+        print('Completed embedding for - ', filename)
 
     return all_embeddings
