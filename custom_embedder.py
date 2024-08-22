@@ -49,12 +49,22 @@ def GenerateEmbeddings(compressed_filename, model):
             print(compressed_filename + ' could not be opened to be embedded')
             return
         
+        # Extract out details for metadata
+        filename = os.path.basename(compressed_filename)
+        filename_without_extension = os.path.splitext(filename)[0]
+        is_online_api = 'online-api' in compressed_filename
+
         compressed_text = input_doc.read()
-        if len(compressed_text) == 0:
+        # Skip embeddings if less than 20 words
+        # Might want to increase this number
+        if len(compressed_text.split()) < 20: # Place this in a config file eventually
             return False, {}
         
+        # Use this for the model's encode - convert_to_tensor=True
+        # This can be helpful for GPU computation speed however it also
+        # takes up a large amount of space
         chunks = chunker(compressed_text)
-        embeddings = model.encode(chunks)
+        embeddings = model.encode(chunks, show_progress_bar=True)
 
         story = {}
         story['embeddings'] = []
@@ -62,6 +72,7 @@ def GenerateEmbeddings(compressed_filename, model):
             item = {}
             item['source'] = chunk
             item['embedding'] = embedding
+            item['docname'] = f'online-api\\{filename_without_extension}' if is_online_api else filename_without_extension
             item['sourcelength'] = len(chunk)
             story['embeddings'].append(item)
 
